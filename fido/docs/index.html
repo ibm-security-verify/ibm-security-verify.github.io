@@ -248,7 +248,7 @@
 <span class="n">provider</span><span class="o">.</span><span class="nf">createCredentialAttestationRequest</span><span class="p">(</span><span class="n">aaguid</span><span class="p">,</span> <span class="nv">statementProvider</span><span class="p">:</span> <span class="kt">SelfAttestation</span><span class="p">(</span><span class="n">aaguid</span><span class="p">),</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
 </code></pre>
 
-<p>To get the value of the result, see <a href="#responding-requests">Responding to the attestation and assertion requests</a>.</p>
+<p>To get the value of the result, see <a href="#Responding-to-the-attestation-and-assertion-requests">Responding to the attestation and assertion requests</a>.</p>
 <h3 id='get-assertion-options' class='heading'>Get assertion options</h3>
 
 <p>To get assertion options, perform a HTTPS request to a relying party endpoint  <code>POST &lt;server&gt;/assertion/options</code></p>
@@ -285,7 +285,7 @@
 <span class="n">provider</span><span class="o">.</span><span class="nf">createCredentialAssertionRequest</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
 </code></pre>
 
-<p>To get the value of the result, see <a href="#responding-requests">Responding to the attestation and assertion requests</a>.</p>
+<p>To get the value of the result, see <a href="#Responding-to-the-attestation-and-assertion-requests">Responding to the attestation and assertion requests</a>.</p>
 <h3 id='responding-to-the-attestation-and-assertion-requests' class='heading'>Responding to the attestation and assertion requests</h3>
 
 <p>The <code><a href="Protocols/PublicKeyCredentialDelegate.html">PublicKeyCredentialDelegate</a></code> provides information about the outcome of an attestation or assertion request. Adopt this protocol to determine how to react and process success or errors.</p>
