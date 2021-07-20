@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IBMFIDOKit  Reference</title>
+    <title>FIDO  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -15,12 +15,12 @@
   <body>
 
 
-    <a title="IBMFIDOKit  Reference"></a>
+    <a title="FIDO  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          IBMFIDOKit Docs
+          FIDO Docs
         </a>
          (100% documented)
       </p>
@@ -32,7 +32,7 @@
       </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/ibm-security-verify/fido-sdk-ios">
+          <a class="header-link" href="https://github.com/ibm-security-verify/verify-sdk-ios/sdk/fido">
             <img class="header-icon" src="img/gh.png"/>
             View on GitHub
           </a>
@@ -41,9 +41,9 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="index.html">IBMFIDOKit Reference</a>
+      <a class="breadcrumb" href="index.html">FIDO Reference</a>
       <img class="carat" src="img/carat.png" />
-      IBMFIDOKit  Reference
+      FIDO  Reference
     </p>
 
     <div class="content-wrapper">
@@ -148,7 +148,7 @@
                 <a class="nav-group-task-link" href="Structs/PublicKeyCredential.html">PublicKeyCredential</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/PublicKeyCredential.html#/s:10IBMFIDOKit19PublicKeyCredentialV22ClientExtensionResultsV">– ClientExtensionResults</a>
+                <a class="nav-group-task-link" href="Structs/PublicKeyCredential.html#/s:4FIDO19PublicKeyCredentialV22ClientExtensionResultsV">– ClientExtensionResults</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/PublicKeyCredentialCreationOptions.html">PublicKeyCredentialCreationOptions</a>
@@ -183,50 +183,69 @@
             <h1 id='ibm-security-verify-fido-sdk-for-ios' class='heading'>IBM Security Verify FIDO SDK for iOS</h1>
 
 <p>Native implementation of WebAuthn ceremony with support for custom certificate attestation and authenticator extensions.</p>
-<h2 id='prerequisites' class='heading'>Prerequisites</h2>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+<h3 id='prerequisites' class='heading'>Prerequisites</h3>
 
 <ul>
 <li>Identity provider with FIDO relying party
 &gt; See <a href="https://docs.verify.ibm.com/verify/docs/create-a-fido-relying-party">Create a FIDO Relying Party for WebAuthn</a></li>
 </ul>
-<h2 id='requirements' class='heading'>Requirements</h2>
+<h3 id='installation' class='heading'>Installation</h3>
 
-<ul>
-<li>Xcode 12.0 or above</li>
-<li>MacOS 11.0 or higher</li>
-<li>iOS 14.1 or higher</li>
-</ul>
-<h2 id='installation' class='heading'>Installation</h2>
+<p><a href="https://swift.org/package-manager/">Swift Package Manager</a> is used for automating the distribution of Swift code and is integrated into the <code>swift</code> compiler.  To depend on one or more of the components, you need to declare a dependency in your <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"IBM Security Verify"</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.ibm.com/ibm-security-verify/verify-sdk-ios.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"3.0.0"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
 
-<p>Add the SDK as a Package Dependency in Xcode:</p>
+<p>then in the <code>targets</code> section of the application/library, add one or more components to your <code>dependencies</code>, for example:</p>
+<pre class="highlight plaintext"><code>// Target for Swift 5.2
+.target(name: "MyExampleApp", dependencies: [
+    .product(name: "Core", package: "IBM Security Verify"),
+    .product(name: "FIDO", package: "IBM Security Verify")
+],
+</code></pre>
+
+<p>Alternatively, you can add the package manually.</p>
 
 <ol>
-<li>Click <em>File &gt; Swift Packages &gt; Add Package Dependency&hellip;</em></li>
-<li>Enter the URL of this GitHub repository (<a href="https://github.com/craigaps/fido">https://github.com/craigaps/fido</a>) into the search bar</li>
-<li>Proceed through the wizard until finished</li>
+<li>Select your application project in the <strong>Project Navigator</strong> to display the configuration window.</li>
+<li>Select your application project under the <strong>PROJECT</strong> heading</li>
+<li>Select the <strong>Swift Packages</strong> tab.</li>
+<li>Click on the <code>+</code> button.</li>
+<li>Enter <code>https://github.ibm.com/ibm-security-verify/verify-sdk-ios.git</code> as the respository URL and follow the remaining steps selecting the components to add to your project.</li>
 </ol>
+<h2 id='api' class='heading'>API</h2>
+
+<p>The documentaation for the FIDO component API can be reviewed <a href="https://ibm-security-verify.github.io/fido/docs/">here</a>.</p>
 <h2 id='usage' class='heading'>Usage</h2>
 <h3 id='importing-the-sdk' class='heading'>Importing the SDK</h3>
 
-<p>Add the following import to any file in which you want to use the SDK:</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">IBMFIDOKit</span>
+<p>Add the following import statement to the <code>.swift</code> files you wish to reference the component.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FIDO</span>
 </code></pre>
 <h3 id='get-attestation-options' class='heading'>Get attestation options</h3>
 
 <p>To get the attestation options, perform a HTTPS request to a relying party endpoint  <code>POST &lt;server&gt;/attestation/options</code></p>
-<pre class="highlight swift"><code><span class="kt">FidoService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">fetchAttestationOptions</span><span class="p">(</span><span class="n">relyingPartyUrl</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="n">accessToken</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">value</span><span class="p">):</span>
-        <span class="c1">// Parse the result</span>
-        <span class="k">guard</span> <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">PublicKeyCredentialCreationOptions</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">value</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span>
-        <span class="p">}</span>
+<pre class="highlight swift"><code><span class="c1">// Create the request</span>
+<span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/attestation/options"</span><span class="p">)</span><span class="o">!</span>
+<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">URLRequest</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+<span class="n">request</span><span class="o">.</span><span class="n">httpMethod</span> <span class="o">=</span> <span class="s">"POST"</span>
+<span class="n">request</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="s">"Bearer ABC123"</span><span class="p">,</span> <span class="nv">forHTTPHeaderField</span><span class="p">:</span> <span class="s">"Authorization"</span><span class="p">)</span>
 
-        <span class="c1">// Handle successful options</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="c1">// Handle unsuccessful error (NetworkError)</span>
+<span class="c1">// Fetch the attestation options</span>
+<span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
     <span class="p">}</span>
-<span class="p">}</span>
+
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">PublicKeyCredentialCreationOptions</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Handle the options result</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
 </code></pre>
 <h3 id='create-an-attestation-request' class='heading'>Create an attestation request</h3>
 
@@ -239,7 +258,7 @@
 <span class="c1">// Attempt to generate the public key credential with a private key attestation.</span>
 <span class="k">let</span> <span class="nv">provider</span> <span class="o">=</span> <span class="kt">PublicKeyCredentialProvider</span><span class="p">()</span>
 
-<span class="c1">// Ensure you implement PublicKeyCredentialDelegate when the request completes.</span>
+<span class="c1">// Ensure you implement PublicKeyCredentialDelegate to handle the completed request.</span>
 <span class="n">provider</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
 <span class="n">provider</span><span class="o">.</span><span class="nf">createCredentialAttestationRequest</span><span class="p">(</span><span class="n">aaguid</span><span class="p">,</span> <span class="nv">statementProvider</span><span class="p">:</span> <span class="kt">SelfAttestation</span><span class="p">(</span><span class="n">aaguid</span><span class="p">),</span> <span class="nv">options</span><span class="p">:</span> <span class="n">options</span><span class="p">)</span>
 </code></pre>
@@ -248,20 +267,25 @@
 <h3 id='get-assertion-options' class='heading'>Get assertion options</h3>
 
 <p>To get assertion options, perform a HTTPS request to a relying party endpoint  <code>POST &lt;server&gt;/assertion/options</code></p>
-<pre class="highlight swift"><code><span class="c1">// Fetch the attestation options from the relying party.</span>
-<span class="kt">FidoService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">fetchAssertionOptions</span><span class="p">(</span><span class="n">assertionUrl</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="n">accessToken</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
-    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">value</span><span class="p">):</span>
-        <span class="c1">// Handle successful value (PublicKeyCredentialRequestOptions)</span>
-         <span class="k">guard</span> <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">PublicKeyCredentialRequestOptions</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
-             <span class="k">return</span>
-         <span class="p">}</span>
+<pre class="highlight swift"><code><span class="c1">// Create the request</span>
+<span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/assertion/options"</span><span class="p">)</span><span class="o">!</span>
+<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">URLRequest</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+<span class="n">request</span><span class="o">.</span><span class="n">httpMethod</span> <span class="o">=</span> <span class="s">"POST"</span>
+<span class="n">request</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="s">"Bearer ABC123"</span><span class="p">,</span> <span class="nv">forHTTPHeaderField</span><span class="p">:</span> <span class="s">"Authorization"</span><span class="p">)</span>
 
-        <span class="c1">// Handle successful options</span>
-    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-        <span class="c1">// Handle unsuccessful error (NetworkError)</span>
+<span class="c1">// Fetch the assertion options</span>
+<span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
     <span class="p">}</span>
-<span class="p">}</span>
+
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">PublicKeyCredentialRequestOptions</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Handle the options result</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
 </code></pre>
 <h3 id='create-an-assertion-request' class='heading'>Create an assertion request</h3>
 
@@ -288,33 +312,59 @@
     <span class="p">}</span>
 
     <span class="kd">func</span> <span class="nf">publicKeyCredential</span><span class="p">(</span><span class="nv">provider</span><span class="p">:</span> <span class="kt">PublicKeyCredentialProvider</span><span class="p">,</span> <span class="n">didCompleteWithAttestation</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">PublicKeyCredential</span><span class="o">&lt;</span><span class="kt">AuthenticatorAttestationResponse</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">FidoService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">createAuthenticator</span><span class="p">(</span><span class="n">relyingPartyUrl</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="n">accessToken</span><span class="p">,</span> <span class="nv">attestation</span><span class="p">:</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
-            <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-            <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">value</span><span class="p">):</span>
-                <span class="c1">// Handle success</span>
-            <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-                <span class="c1">// Handle unsuccessful error (NetworkError)</span>
-            <span class="p">}</span>
+        <span class="c1">// Convert the attestation response to JSON</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONEncoder</span><span class="p">()</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
         <span class="p">}</span>
+
+        <span class="c1">// Create the request</span>
+        <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/attestation/result"</span><span class="p">)</span><span class="o">!</span>
+        <span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">URLRequest</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+        <span class="n">request</span><span class="o">.</span><span class="n">httpMethod</span> <span class="o">=</span> <span class="s">"POST"</span>
+        <span class="n">request</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="s">"Bearer ABC123"</span><span class="p">,</span> <span class="nv">forHTTPHeaderField</span><span class="p">:</span> <span class="s">"Authorization"</span><span class="p">)</span>
+        <span class="n">request</span><span class="o">.</span><span class="n">httpBody</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="c1">// Create the authenticator</span>
+        <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+            <span class="c1">// Handle the result.</span>
+             <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+
+            <span class="nf">print</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+        <span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
 
-<p>For an assertion result, you can validate the assertion by making a HTTPS request to a relying party endpoint <code>POST &lt;server&gt;/attestation/result</code></p>
+<p>For an assertion result, you can validate the assertion by making a HTTPS request to a relying party endpoint <code>POST &lt;server&gt;/assertion/result</code></p>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">PublicKeyCredentialDelegate</span> <span class="p">{</span>
     <span class="kd">func</span> <span class="nf">publicKeyCredential</span><span class="p">(</span><span class="nv">provider</span><span class="p">:</span> <span class="kt">PublicKeyCredentialProvider</span><span class="p">,</span> <span class="n">didCompleteWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// Error during assertion</span>
     <span class="p">}</span>
 
     <span class="kd">func</span> <span class="nf">publicKeyCredential</span><span class="p">(</span><span class="nv">provider</span><span class="p">:</span> <span class="kt">PublicKeyCredentialProvider</span><span class="p">,</span> <span class="n">didCompleteWithAssertion</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">PublicKeyCredential</span><span class="o">&lt;</span><span class="kt">AuthenticatorAssertionResponse</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">FidoService</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">assertAuthenticator</span><span class="p">(</span><span class="n">assertionUrl</span><span class="p">,</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="n">accessToken</span> <span class="nv">assertion</span><span class="p">:</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
-            <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
-            <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">value</span><span class="p">):</span>
-                <span class="c1">// Handle success</span>
-            <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
-                <span class="c1">// Handle unsuccessful error (NetworkError)</span>
-            <span class="p">}</span>
+        <span class="c1">// Convert the assertion response to JSON</span>
+        <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">JSONEncoder</span><span class="p">()</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
         <span class="p">}</span>
+
+        <span class="c1">// Create the request</span>
+        <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/assertion/result"</span><span class="p">)</span><span class="o">!</span>
+        <span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">URLRequest</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">url</span><span class="p">)</span>
+        <span class="n">request</span><span class="o">.</span><span class="n">httpMethod</span> <span class="o">=</span> <span class="s">"POST"</span>
+        <span class="n">request</span><span class="o">.</span><span class="nf">setValue</span><span class="p">(</span><span class="s">"Bearer ABC123"</span><span class="p">,</span> <span class="nv">forHTTPHeaderField</span><span class="p">:</span> <span class="s">"Authorization"</span><span class="p">)</span>
+        <span class="n">request</span><span class="o">.</span><span class="n">httpBody</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="c1">// Assert the authenticator</span>
+        <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">request</span><span class="p">)</span> <span class="p">{</span> <span class="n">data</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+            <span class="c1">// Handle the result.</span>
+            <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+
+            <span class="nf">print</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+        <span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
@@ -329,7 +379,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">IBM Secuity</a>. All rights reserved. (Last updated: 2021-07-01)</p>
+      <p>&copy; 2021 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external">IBM Secuity</a>. All rights reserved. (Last updated: 2021-07-20)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
