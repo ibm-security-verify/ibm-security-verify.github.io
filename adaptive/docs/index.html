@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adaptive  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="Adaptive  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          Adaptive Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ibm-security-verify/verify-sdk-ios/sdk/adaptive">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">Adaptive Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Adaptive  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AdaptiveContext.html">AdaptiveContext</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FactorType.html">FactorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/OneTimePasscodeType.html">OneTimePasscodeType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AdaptiveCollectionService.html">AdaptiveCollectionService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AdaptiveDelegate.html">AdaptiveDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols.html#/s:8Adaptive0A6ResultP">AdaptiveResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/AssessmentFactor.html">AssessmentFactor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/FactorEvaluation.html">FactorEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols.html#/s:8Adaptive14GenerateResultP">GenerateResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AllowAssessmentResult.html">AllowAssessmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AllowedFactor.html">AllowedFactor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AssessmentStatusType.html">AssessmentStatusType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/DenyAssessmentResult.html">DenyAssessmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/EnrolledFactor.html">EnrolledFactor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FIDOEvaluation.html">FIDOEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FIDOGenerateResult.html">FIDOGenerateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/KnowledgeQuestionEvaluation.html">KnowledgeQuestionEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/KnowledgeQuestionGenerateResult.html">KnowledgeQuestionGenerateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/OneTimePasscodeEvaluation.html">OneTimePasscodeEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/OtpGenerateResult.html">OtpGenerateResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QrCodeEvaluation.html">QrCodeEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QuestionInfo.html">QuestionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/RequiresAssessmentResult.html">RequiresAssessmentResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/UserDefault.html">UserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/UsernamePasswordEvaluation.html">UsernamePasswordEvaluation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/VoidGenerateResult.html">VoidGenerateResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:8Adaptive14FIDOCredentiala">FIDOCredential</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='ibm-security-verify-adaptive-sdk-for-ios' class='heading'>IBM Security Verify Adaptive SDK for iOS</h1>
+
+<p>The adaptive component provides device assessment. Based on cloud risk policies, authentication and authorization challenages can be evaluated.</p>
+<h2 id='getting-started' class='heading'>Getting started</h2>
+<h2 id='prerequisites' class='heading'>Prerequisites</h2>
+
+<ul>
+<li>Install and configure the
+<a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript">Proxy SDK</a> on a Node server.</li>
+</ul>
+
+<blockquote>
+<p>See <a href="https://docs.verify.ibm.com/verify/docs/on-boarding-a-native-application">On-board a native application</a></p>
+</blockquote>
+<h3 id='installation' class='heading'>Installation</h3>
+
+<p><a href="https://swift.org/package-manager/">Swift Package Manager</a> is used for automating the distribution of Swift code and is integrated into the <code>swift</code> compiler.  To depend on one or more of the components, you need to declare a dependency in your <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"IBM Security Verify"</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.ibm.com/ibm-security-verify/verify-sdk-ios.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"3.0.0"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+
+<p>then in the <code>targets</code> section of the application/library, add one or more components to your <code>dependencies</code>, for example:</p>
+<pre class="highlight swift"><code><span class="c1">// Target for Swift 5.2</span>
+<span class="o">.</span><span class="nf">target</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"MyExampleApp"</span><span class="p">,</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Adaptive"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"IBM Security Verify"</span><span class="p">)</span>
+<span class="p">],</span>
+</code></pre>
+
+<p>Alternatively, you can add the package manually.</p>
+
+<ol>
+<li>Select your application project in the <strong>Project Navigator</strong> to display the configuration window.</li>
+<li>Select your application project under the <strong>PROJECT</strong> heading</li>
+<li>Select the <strong>Swift Packages</strong> tab.</li>
+<li>Click on the <code>+</code> button.</li>
+<li>Enter <code>https://github.ibm.com/ibm-security-verify/verify-sdk-ios.git</code> as the respository URL and follow the remaining steps selecting the components to add to your project.</li>
+</ol>
+<h3 id='api-documentation' class='heading'>API documentation</h3>
+
+<p>The Adaptive component API can be reviewed <a href="https://ibm-security-verify.github.io/adaptive/docs/">here</a>.</p>
+<h3 id='importing-the-sdk' class='heading'>Importing the SDK</h3>
+
+<p>Add the following import statement to the <code>.swift</code> files you wish to reference the component.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Adaptive</span>
+</code></pre>
+<h3 id='trusteer-configuration-settings' class='heading'>Trusteer configuration settings</h3>
+
+<p>To start a device collection analysis, you will need to initialise a <code>TrusteerCollectionService</code> structure.  This structure is part of the Trusteer zip you can obtain via your tenant configuration  or via the IBM Security Verify Developer Portal.  Also included in the Trusteer zip will be your <code>vendorId</code>, <code>clientId</code> and <code>clientKey</code>. </p>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='start-the-collection-service' class='heading'>Start the collection service</h3>
+
+<p>To start the collection, an instance <code><a href="Protocols/AdaptiveCollectionService.html">AdaptiveCollectionService</a></code> is assigned to  <code>AdaptiveContext.shared.collectionService</code>.</p>
+<pre class="highlight swift"><code><span class="c1">// Initial a new instance of TrusteerCollectionService with client info provided in the Trusteer zip.</span>
+<span class="k">let</span> <span class="nv">trusteerCollection</span> <span class="o">=</span> <span class="kt">TrusteerCollectionService</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="s">"domain.com"</span><span class="p">,</span> <span class="nv">clientId</span><span class="p">:</span> <span class="s">"com.domaim.app"</span><span class="p">,</span> <span class="nv">clientKey</span><span class="p">:</span>  <span class="s">"YMAQAABNFUWS2LKCIVDUSTRAKBKU..."</span>
+<span class="kt">AdaptiveContext</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">collectionService</span> <span class="o">=</span> <span class="n">trusteerCollection</span>
+<span class="k">try</span><span class="p">?</span> <span class="kt">AdaptiveContext</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+</code></pre>
+<h3 id='stop-the-collection-service' class='heading'>Stop the collection service</h3>
+<pre class="highlight swift"><code><span class="c1">// Stop the collection</span>
+<span class="k">try</span><span class="p">?</span> <span class="kt">AdaptiveContext</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">stop</span><span class="p">()</span>
+</code></pre>
+<h3 id='implementing-adaptivedelegate' class='heading'>Implementing AdaptiveDelegate</h3>
+
+<p>The <code><a href="Protocols/AdaptiveDelegate.html">AdaptiveDelegate</a></code> protocol needs to be implemented in order to expose the <code>assessment</code>, <code>generate</code> and <code>evaluate</code> functions.</p>
+<pre class="highlight swift"><code><span class="c1">// Implementing the `AdaptiveDelegate` protocol as a singleton</span>
+<span class="kd">class</span> <span class="kt">MyAdaptive</span><span class="p">:</span> <span class="kt">AdaptiveDelegate</span> <span class="p">{</span>
+  <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span> <span class="o">=</span> <span class="kt">Adaptive</span><span class="p">()</span>
+  <span class="kd">private</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{}</span>
+
+  <span class="c1">// Implement the `assessment` function</span>
+  <span class="kd">func</span> <span class="nf">assessment</span><span class="p">(</span><span class="n">with</span> <span class="nv">sessionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">evaluationContext</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">AdaptiveResult</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Send a request to the server to perform risk assessment for the given session ID using the Proxy SDK.</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Implement the `generate` function</span>
+  <span class="kd">func</span> <span class="nf">generate</span><span class="p">(</span><span class="n">with</span> <span class="nv">factor</span><span class="p">:</span> <span class="kt">FactorGenerationInfo</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Send a request to the server to generate a verification for the given `FactorGenerationInfo` using the Proxy SDK.</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Implement the `evaluate` function</span>
+  <span class="kd">func</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">using</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">FactorEvaluation</span><span class="p">,</span> <span class="nv">evaluationContext</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="o">&lt;</span><span class="kt">AdaptiveResult</span><span class="p">,</span> <span class="kt">Error</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Send a request to the server to evaluate a verification for the given `FactorEvaluation` using the Proxy SDK.</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='perform-a-risk-assessment' class='heading'>Perform a risk assessment</h3>
+
+<p>The purpose of the <code>assessment</code> function is to intiate a risk assessment via the <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript">Proxy SDK</a>. The implementation of the <code>assessment</code> function should send a request to the Proxy SDK.</p>
+
+<p>Upon receiving the request, the server should call the Proxy SDK&rsquo;s
+<a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript/tree/develop#assess-a-policy"><code>assess</code></a> method, and respond accordingly.</p>
+
+<p>Once a successful response is received, it can be classified into one of <code><a href="Structs/AllowAssessmentResult.html">AllowAssessmentResult</a></code>, <code><a href="Structs/DenyAssessmentResult.html">DenyAssessmentResult</a></code>, or <code><a href="Structs/RequiresAssessmentResult.html">RequiresAssessmentResult</a></code> structures, to be passed in the <code>completion</code> function.                             </p>
+<pre class="highlight swift"><code>  <span class="c1">// Perform risk assessment</span>
+  <span class="kt">MyAdaptive</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">assessment</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="kt">AdaptiveContext</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">sessionId</span><span class="p">,</span> <span class="nv">evaluationContext</span><span class="p">:</span> <span class="s">"login"</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">requiresResult</span> <span class="k">as</span> <span class="kt">RequiresAssessmentResult</span><span class="p">):</span>
+      <span class="c1">// `requires` result</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">allowResult</span> <span class="k">as</span> <span class="kt">AllowAssessmentResult</span><span class="p">):</span>
+      <span class="c1">// `allow` result</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+      <span class="c1">// `deny` result</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="c1">// Error during assessment</span>
+      <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre>
+<h3 id='perform-a-factor-generation' class='heading'>Perform a factor generation</h3>
+
+<p>The <code>generate</code> function is to generate a <code><a href="Enums/FactorType.html">FactorType</a></code> verification via
+the <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript">Proxy SDK</a>.</p>
+
+<p>The implementation of this function should send a request to a server using the Proxy SDK. Upon receiving the request, the server should call the Proxy SDK&rsquo;s <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript/tree/develop#generate-an-email-otp-verification"><code>generateEmailOTP</code></a> or <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript/tree/develop#generate-an-sms-otp-verification"><code>generateSMSOTP</code></a> methods. The method to call should correspond to a <code>FactorGenerationInfo</code> type of the <code>factor</code> property. Typically, the server will not respond after generating these verifications.</p>
+
+<p>The currently supported <code><a href="Enums/FactorType.html">FactorType</a></code> for generation are <code>.emailOTP</code>
+and <code>.smsOTP</code>.</p>
+<pre class="highlight swift"><code>  <span class="c1">// Create a `FactorGenerationInfo` instance</span>
+  <span class="c1">// (The `transactionId` is received from the `assessment` function on a `requires` status.)</span>
+  <span class="k">let</span> <span class="nv">generationInfo</span> <span class="o">=</span> <span class="kt">FactorGenerationInfo</span><span class="p">(</span><span class="nv">transactionId</span><span class="p">:</span> <span class="n">transactionId</span><span class="p">,</span> <span class="nv">factor</span><span class="p">:</span> <span class="o">.</span><span class="n">smsOTP</span><span class="p">)</span>
+
+  <span class="c1">// Generate verification</span>
+  <span class="kt">MyAdaptive</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">generate</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">generation</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">():</span>
+      <span class="c1">// SMS OTP successfully sent.</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="c1">// Error during generation</span>
+      <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre>
+<h3 id='perform-a-factor-evaluation' class='heading'>Perform a factor evaluation</h3>
+
+<p>The implementation of this function should send a request to a server using the Proxy SDK. Upon receiving the request, the server should call the Proxy SDK&rsquo;s <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript/tree/develop#evaluate-a-username-password-verification"><code>evaluateUsernamePassword</code></a>
+or <a href="https://github.ibm.com/IBM-Verify/adaptive-sdk-javascript/tree/develop#evaluate-an-otp-verification"><code>evaluateOTP</code></a>
+methods, and respond accordingly. The method to call should depend on the instance of <code><a href="Protocols/FactorEvaluation.html">FactorEvaluation</a></code> (either
+<code><a href="Structs/UsernamePasswordEvaluation.html">UsernamePasswordEvaluation</a></code> or
+<code><a href="Structs/OneTimePasscodeEvaluation.html">OneTimePasscodeEvaluation</a></code>.</p>
+
+<p>Once a successful response is received, it can be classified into one of <code><a href="Structs/AllowAssessmentResult.html">AllowAssessmentResult</a></code>, <code><a href="Structs/DenyAssessmentResult.html">DenyAssessmentResult</a></code> or
+<code><a href="Structs/RequiresAssessmentResult.html">RequiresAssessmentResult</a></code> structures, to be passed in the <code>completion</code> function.</p>
+<pre class="highlight swift"><code>  <span class="c1">// Create a `FactorEvaluation` instance</span>
+  <span class="c1">// (The `transactionId` is received from the `assessment` function on a `requires` status.)</span>
+  <span class="k">let</span> <span class="nv">usernamePasswordEvaluation</span> <span class="o">=</span> <span class="kt">UsernamePasswordEvaluation</span><span class="p">(</span><span class="n">transactionId</span><span class="p">,</span> <span class="nv">username</span><span class="p">:</span> <span class="s">"username"</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="s">"password"</span><span class="p">)</span>
+
+  <span class="c1">// Evaluate a factor verification</span>
+  <span class="kt">MyAdaptive</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">evaluate</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="n">usernamePasswordEvaluation</span><span class="p">,</span> <span class="nv">evaluationContext</span><span class="p">:</span> <span class="s">"login"</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">allowResult</span> <span class="k">as</span> <span class="kt">AllowAssessmentResult</span><span class="p">):</span>
+      <span class="c1">// `allow` result</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+      <span class="c1">// `deny` result</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+      <span class="c1">// Error during evaluation</span>
+      <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</code></pre>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>An <a href="https://github.com/ibm-security-verify/verify-sdk-ios/examples/adaptive">example</a> application is available for the Adaptive component.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This package contains code licensed under the MIT License (the &ldquo;License&rdquo;). You may view the License in the <a href="https://github.com/ibm-security-verify/verify-sdk-ios/LICENSE.md">LICENSE</a> file within this package.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external">IBM Secuity</a>. All rights reserved. (Last updated: 2021-08-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
