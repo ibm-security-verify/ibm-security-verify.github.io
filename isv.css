@@ -97,6 +97,28 @@ body {
 	color: inherit !important;
 }
 
+img {
+	max-width: 100%;
+	color: #fff; 
+}
+.header-icon {
+	padding-right: 6px;
+	vertical-align: -4px;
+	height: 16px; 
+	color: #fff; 
+}
+
+.header-link {
+	color: #fff; 
+	text-decoration: none; 
+}
+
+a:hover, a:focus {
+    outline: 0;
+    text-decoration: none;
+	color: #fff; 
+}
+  
 .footer, .push {
 	height: 52px;
 }
