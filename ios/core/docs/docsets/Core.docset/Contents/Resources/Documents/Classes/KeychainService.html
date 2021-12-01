@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KeychainService Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/KeychainService" class="dashAnchor"></a>
+
+    <a title="KeychainService Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Core Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ibm-security-verify/verify-sdk-ios/sdk/core">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Core Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      KeychainService Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainService.html">KeychainService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PinnedCertificateDelegate.html">PinnedCertificateDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SelfSignedCertificateDelegate.html">SelfSignedCertificateDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SecAccessControl.html">SecAccessControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SecAccessible.html">SecAccessible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/URLSessionError.html">URLSessionError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Thread.html">Thread</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HttpResource.html">HttpResource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HttpResource/method.html">– method</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HttpResource/ContentType.html">– ContentType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>KeychainService</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">KeychainService</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The keychain is the best place to store small secrets, like passwords and cryptographic keys. Use the functions of the keychain services API to add, retrieve, delete, or modify keychain items.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The keychain service is specific to the IBM Security Verify in that, the keychain is not synchronized with Apple iCloud and access to the items in the keychain occurs after the first device unlock operation.
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Variables"></a>
+                <a name="//apple_ref/swift/Section/Variables" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Variables"></a>
+                  <h3 class="section-name"><p>Variables</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC7defaultACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/default" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC7defaultACvpZ">default</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the default singleton instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">var</span> <span class="p">`</span><span class="nv">default</span><span class="p">`:</span> <span class="kt">KeychainService</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Core@objc(cs)KeychainService(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Core@objc(cs)KeychainService(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the <code>KeychainService</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Keychain%20methods"></a>
+                <a name="//apple_ref/swift/Section/Keychain methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Keychain%20methods"></a>
+                  <h3 class="section-name"><p>Keychain methods</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC7addItem_5value13accessControl13accessibilityySS_xAA09SecAccessH0OSgAA0J10AccessibleOtKSeRzSERzlF"></a>
+                    <a name="//apple_ref/swift/Method/addItem(_:value:accessControl:accessibility:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC7addItem_5value13accessControl13accessibilityySS_xAA09SecAccessH0OSgAA0J10AccessibleOtKSeRzSERzlF">addItem(_:<wbr>value:<wbr>accessControl:<wbr>accessibility:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an item to a keychain.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">Codable</span> <span class="p">{</span>
+   <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+   <span class="k">var</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">person</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"John Doe"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">42</span><span class="p">)</span>
+<span class="k">try</span><span class="p">?</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addItem</span><span class="p">(</span><span class="s">"account"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="n">person</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/KeychainError.html">KeychainError</a></code> representing the error.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">addItem</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">accessControl</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecAccessControl.html">SecAccessControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">accessibility</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecAccessible.html">SecAccessible</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">afterFirstUnlock</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to associate the value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to store in the keychain.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessControl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>One or more flags that determine how the value can be accessed. See <a href="https://developer.apple.com/documentation/security/secaccesscontrolcreateflags">SecAccessControlCreateFlags</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessibility</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key whose value indicates when a keychain item is accessible. Default is <code><a href="../Enums/SecAccessible.html#/s:4Core13SecAccessibleO16afterFirstUnlockyA2CmF">SecAccessible.afterFirstUnlock</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC7addItem_5value13accessControl13accessibilityySS_10Foundation4DataVAA09SecAccessH0OSgAA0L10AccessibleOtKF"></a>
+                    <a name="//apple_ref/swift/Method/addItem(_:value:accessControl:accessibility:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC7addItem_5value13accessControl13accessibilityySS_10Foundation4DataVAA09SecAccessH0OSgAA0L10AccessibleOtKF">addItem(_:<wbr>value:<wbr>accessControl:<wbr>accessibility:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an item to a keychain.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">Codable</span> <span class="p">{</span>
+   <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+   <span class="k">var</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">person</span> <span class="o">=</span> <span class="kt">Person</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"John Doe"</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="mi">42</span><span class="p">)</span>
+<span class="k">try</span><span class="p">?</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addItem</span><span class="p">(</span><span class="s">"account"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="n">person</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/KeychainError.html">KeychainError</a></code> representing the error.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addItem</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">accessControl</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecAccessControl.html">SecAccessControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">accessibility</span><span class="p">:</span> <span class="kt"><a href="../Enums/SecAccessible.html">SecAccessible</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">afterFirstUnlock</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to associate the value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Data</code> value to store in the keychain.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessControl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>One or more flags that determine how the value can be accessed. See <a href="https://developer.apple.com/documentation/security/secaccesscontrolcreateflags">SecAccessControlCreateFlags</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessibility</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key whose value indicates when a keychain item is accessible. Default is <code><a href="../Enums/SecAccessible.html#/s:4Core13SecAccessibleO16afterFirstUnlockyA2CmF">SecAccessible.afterFirstUnlock</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC10deleteItemyySSKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteItem(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC10deleteItemyySSKF">deleteItem(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete an item from the keychain.</p>
+<pre class="highlight swift"><code><span class="k">try</span><span class="p">?</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">deleteItem</span><span class="p">(</span><span class="s">"account"</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/KeychainError.html">KeychainError</a></code> representing the error.
+
+</div><div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    No error is thrown when the key is not found.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteItem</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to associate the value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC8readItem_4typexSS_xmtKSeRzSERzlF"></a>
+                    <a name="//apple_ref/swift/Method/readItem(_:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC8readItem_4typexSS_xmtKSeRzSERzlF">readItem(_:<wbr>type:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reads a value from the keychain.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Person</span> <span class="p">{</span>
+   <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+   <span class="k">var</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">guard</span> <span class="k">let</span> <span class="nv">person</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">readItem</span><span class="p">(</span><span class="s">"account"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Person</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="k">return</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/KeychainError.html">KeychainError</a></code> representing the error.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">readItem</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to associate the value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of the value to decode from the Keychain value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value of type <code>T</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC10itemExistsySbSSF"></a>
+                    <a name="//apple_ref/swift/Method/itemExists(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC10itemExistsySbSSF">itemExists(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query the keychain for a matching key.</p>
+
+<p>If the key has been generated requiring authentication for access, the UI has been surpressed.  Therefore the function will return <code>true</code> under the following conditions:</p>
+
+<ul>
+<li><code>errSecSuccess</code> The item was found, no error.</li>
+<li><code>errSecInteractionNotAllowed</code> The item was found, the user interaction is not allowed.</li>
+<li><code>errSecAuthFailed</code> The item was found, but invalidated due to a change to biometry or passphrase.</li>
+</ul>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">itemExists</span><span class="p">(</span><span class="s">"greeting"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">itemExists</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to query.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the key exists, otherwise <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC27hasPolicyDomainStateChangedySb10Foundation4DataVSgF"></a>
+                    <a name="//apple_ref/swift/Method/hasPolicyDomainStateChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC27hasPolicyDomainStateChangedySb10Foundation4DataVSgF">hasPolicyDomainStateChanged(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Evaluates if the <code>LocalAuthentication</code> policy has changed from an initial domain state.</p>
+<pre class="highlight swift"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">initialDomainStateData</span> <span class="o">=</span> <span class="kt">LAContext</span><span class="p">()</span><span class="o">.</span><span class="n">evaluatedPolicyDomainState</span> <span class="p">{</span>
+   <span class="c1">// Persist the initialDomainStateData for future use.</span>
+<span class="p">}</span>
+<span class="o">...</span>
+
+<span class="c1">// Get the initialDomainStateData from persistence, check to see if it has changed against the current domain state.</span>
+<span class="k">if</span> <span class="kt">KeychainService</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">hasAuthenticationSettingsChanged</span><span class="p">(</span><span class="n">initialDomainStateData</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nf">print</span><span class="p">(</span><span class="s">"User has changed their biometry enrollment."</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hasPolicyDomainStateChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">evaluatedPolicyDomainState</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>evaluatedPolicyDomainState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The initial policy domain state.  Default value is <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the current domain state has changed, otherwise <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Core15KeychainServiceC10renameItem_6newKeyySS_SStKF"></a>
+                    <a name="//apple_ref/swift/Method/renameItem(_:newKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Core15KeychainServiceC10renameItem_6newKeyySS_SStKF">renameItem(_:<wbr>newKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Renames an item in the Keychain.</p>
+<pre class="highlight swift"><code><span class="k">do</span> <span class="p">{</span>
+   <span class="k">try</span> <span class="kt">KeychainHelper</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">rename</span><span class="p">(</span><span class="s">"oldKey"</span><span class="p">,</span> <span class="nv">newKey</span><span class="p">:</span> <span class="s">"newKey"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+   <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code><a href="../Enums/KeychainError.html">KeychainError</a></code> representing the error.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">renameItem</span><span class="p">(</span><span class="n">_</span> <span class="nv">forKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">newKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique identifer of the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new unique identifier of the key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external">IBM Secuity</a>. All rights reserved. (Last updated: 2021-11-30)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
