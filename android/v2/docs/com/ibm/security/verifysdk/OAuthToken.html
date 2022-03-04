@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -262,6 +262,14 @@ implements java.io.Serializable</pre>
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serializeToJsonWithTimestamps()">serializeToJsonWithTimestamps</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns a json formated serialized representation of this instance where the
+ dates are repsented as timestamps.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldRefresh()">shouldRefresh</a></span>()</code></th>
 <td class="colLast">
@@ -470,6 +478,24 @@ public&nbsp;java.lang.String&nbsp;getTokenType()</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><ul><li>true if 90% of the token lifetime has elapsed since the token created date
  <li>false otherwise</ul></dd>
+</dl>
+</li>
+</ul>
+<a id="serializeToJsonWithTimestamps()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serializeToJsonWithTimestamps</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;serializeToJsonWithTimestamps()
+                                               throws <a href="VerifySdkException.html" title="class in com.ibm.security.verifysdk">VerifySdkException</a></pre>
+<div class="block">Returns a json formated serialized representation of this instance where the
+ dates are repsented as timestamps.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a json formated serialized representation of this instance.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="VerifySdkException.html" title="class in com.ibm.security.verifysdk">VerifySdkException</a></code> - if the instance could not be serialized</dd>
 </dl>
 </li>
 </ul>
