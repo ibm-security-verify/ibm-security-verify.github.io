@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OIDCMetadataInfo Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/OIDCMetadataInfo" class="dashAnchor"></a>
+
+    <a title="OIDCMetadataInfo Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Authentication Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ibm-security-verify/verify-sdk-ios/sdk/authentication">
+            <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Authentication Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      OIDCMetadataInfo Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OAuthProvider.html">OAuthProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CodeChallengeMethod.html">CodeChallengeMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/OAuthProviderError.html">OAuthProviderError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/PKCE.html">PKCE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/OAuthProviderDelegate.html">OAuthProviderDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/OIDCMetadataInfo.html">OIDCMetadataInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TokenInfo.html">TokenInfo</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>OIDCMetadataInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OIDCMetadataInfo</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                </div>
+              </div>
+            <p>The metadata that describes an OpenID Connect  Provider configuration.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV6issuerSSvp"></a>
+                    <a name="//apple_ref/swift/Property/issuer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV6issuerSSvp">issuer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Issuer Identifier of the OpenID Connect Provider. This value is the same as the <code>iss</code> claim value in the ID tokens issued by this provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">issuer</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV22authorization_endpointSSvp"></a>
+                    <a name="//apple_ref/swift/Property/authorization_endpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV22authorization_endpointSSvp">authorization_endpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the OpenID Connect Provider&rsquo;s OAuth 2.0 Authorization Endpoint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">authorization_endpoint</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV14token_endpointSSvp"></a>
+                    <a name="//apple_ref/swift/Property/token_endpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV14token_endpointSSvp">token_endpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the OpenID Connect Provider&rsquo;s OAuth 2.0 Token Endpoint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">token_endpoint</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV17userinfo_endpointSSvp"></a>
+                    <a name="//apple_ref/swift/Property/userinfo_endpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV17userinfo_endpointSSvp">userinfo_endpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the OpenID Connect Provider&rsquo;s UserInfo Endpoint.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">userinfo_endpoint</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV8jwks_uriSSvp"></a>
+                    <a name="//apple_ref/swift/Property/jwks_uri" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV8jwks_uriSSvp">jwks_uri</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the OpenID Connect Provider&rsquo;s JSON Web Key Set document. This document contains signing keys that clients use to validate the signatures from the provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">jwks_uri</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV21registration_endpointSSvp"></a>
+                    <a name="//apple_ref/swift/Property/registration_endpoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV21registration_endpointSSvp">registration_endpoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the OpenID Connect Provider&rsquo;s Dynamic Client Registration Endpoint</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">registration_endpoint</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV24response_types_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/response_types_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV24response_types_supportedSaySSGvp">response_types_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of OAuth 2.0 response types supported by this provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">response_types_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV24response_modes_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/response_modes_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV24response_modes_supportedSaySSGvp">response_modes_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of OAuth 2.0 response modes supported by this provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">response_modes_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV21grant_types_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/grant_types_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV21grant_types_supportedSaySSGvp">grant_types_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of OAuth 2.0 grant types supported by this provider.</p>
+
+<p>If omitted, the default valuea are <code>authorization_code</code> and <code>implicit</code>.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    Implicit grant type is not supported for mobile.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">grant_types_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV23subject_types_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/subject_types_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV23subject_types_supportedSaySSGvp">subject_types_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of Subject Identifier types supported by this provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">subject_types_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV37id_token_signing_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/id_token_signing_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV37id_token_signing_alg_values_supportedSaySSGvp">id_token_signing_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWS signing algorithms (alg values) supported by this provider for the ID Token to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id_token_signing_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV40id_token_encryption_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/id_token_encryption_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV40id_token_encryption_alg_values_supportedSaySSGvp">id_token_encryption_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (alg values) supported by this provider for the ID Token to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id_token_encryption_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV40id_token_encryption_enc_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/id_token_encryption_enc_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV40id_token_encryption_enc_values_supportedSaySSGvp">id_token_encryption_enc_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (enc values) supported by this provider for the ID Token to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id_token_encryption_enc_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV37userinfo_signing_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/userinfo_signing_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV37userinfo_signing_alg_values_supportedSaySSGvp">userinfo_signing_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWS signing algorithms (alg values) JWA supported by the UserInfo Endpoint to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userinfo_signing_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV40userinfo_encryption_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/userinfo_encryption_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV40userinfo_encryption_alg_values_supportedSaySSGvp">userinfo_encryption_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (alg values) JWA supported by the UserInfo Endpoint to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userinfo_encryption_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV40userinfo_encryption_enc_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/userinfo_encryption_enc_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV40userinfo_encryption_enc_values_supportedSaySSGvp">userinfo_encryption_enc_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (enc values) JWA supported by the UserInfo Endpoint to encode the Claims in a JWT.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userinfo_encryption_enc_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV43request_object_signing_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/request_object_signing_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV43request_object_signing_alg_values_supportedSaySSGvp">request_object_signing_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWS signing algorithms (alg values) supported by the OpenID Connect Provider for Request Objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">request_object_signing_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV46request_object_encryption_alg_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/request_object_encryption_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV46request_object_encryption_alg_values_supportedSaySSGvp">request_object_encryption_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (alg values) supported by the OpenID Connect Provider for Request Objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">request_object_encryption_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV46request_object_encryption_enc_values_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/request_object_encryption_enc_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV46request_object_encryption_enc_values_supportedSaySSGvp">request_object_encryption_enc_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWE encryption algorithms (enc values) supported by the OpenID Connect Provider for Request Objects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">request_object_encryption_enc_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV37token_endpoint_auth_methods_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/token_endpoint_auth_methods_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV37token_endpoint_auth_methods_supportedSaySSGvp">token_endpoint_auth_methods_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of Client Authentication methods supported by this Token Endpoint. The options are <code>client_secret_post</code>, <code>client_secret_basic</code>, <code>client_secret_jwt</code>, and <code>private_key_jwt</code>.</p>
+
+<p>If omitted, the default value is <code>client_secret_basic</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">token_endpoint_auth_methods_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV48token_endpoint_auth_signing_alg_values_supportedSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/token_endpoint_auth_signing_alg_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV48token_endpoint_auth_signing_alg_values_supportedSaySSGSgvp">token_endpoint_auth_signing_alg_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the JWS signing algorithms (alg values) supported by the Token Endpoint for the signature on the JWT used to authenticate the Client at the Token Endpoint for the <code>private_key_jwt</code> and <code>client_secret_jwt</code> authentication methods.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">token_endpoint_auth_signing_alg_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV24display_values_supportedSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/display_values_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV24display_values_supportedSaySSGSgvp">display_values_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the display parameter values that the OpenID Provider supports.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">display_values_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV21claim_types_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/claim_types_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV21claim_types_supportedSaySSGvp">claim_types_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the Claim Types that the OpenID Provider supports.</p>
+
+<p>If omitted, the default value is <code>normal</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">claim_types_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV16claims_supportedSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/claims_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV16claims_supportedSaySSGvp">claims_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array containing a list of the Claim Names of the Claims that the OpenID Provider <strong>may</strong> be able to supply values for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">claims_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV21service_documentationSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/service_documentation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV21service_documentationSSSgvp">service_documentation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A URL of a page containing human-readable information that developers might want or need to know when using the OpenID Provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">service_documentation</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV24claims_locales_supportedSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/claims_locales_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV24claims_locales_supportedSaySSGSgvp">claims_locales_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of languages and scripts supported for values in Claims being returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">claims_locales_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV20ui_locales_supportedSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/ui_locales_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV20ui_locales_supportedSaySSGSgvp">ui_locales_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of languages and scripts supported for the user interface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ui_locales_supported</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV26claims_parameter_supportedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/claims_parameter_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV26claims_parameter_supportedSbvp">claims_parameter_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean value specifying whether the OpenID Provider supports use of the claims parameter, with <code>true</code> indicating support.</p>
+
+<p>If omitted, the default value is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Default</span>
+<span class="o">.</span><span class="kt">False</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">claims_parameter_supported</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV27request_parameter_supportedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/request_parameter_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV27request_parameter_supportedSbvp">request_parameter_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean value specifying whether the OpenID Provider supports use of the request parameter, with true indicating support.</p>
+
+<p>If omitted, the default value is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Default</span>
+<span class="o">.</span><span class="kt">False</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">request_parameter_supported</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV31request_uri_parameter_supportedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/request_uri_parameter_supported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV31request_uri_parameter_supportedSbvp">request_uri_parameter_supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean value specifying whether the OpenID Provider supports use of the <code>request_uri</code> parameter, with <code>true</code> indicating support.</p>
+
+<p>If omitted, the default value is <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Default</span>
+<span class="o">.</span><span class="kt">True</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">request_uri_parameter_supported</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV32require_request_uri_registrationSbvp"></a>
+                    <a name="//apple_ref/swift/Property/require_request_uri_registration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV32require_request_uri_registrationSbvp">require_request_uri_registration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean value specifying whether the OpenID Provider requires any <code>request_uri</code> values used to be pre-registered using the <code>request_uris</code> registration parameter. Pre-registration is <strong>required</strong> when the value is <code>true</code>.</p>
+
+<p>If omitted, the default value is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Default</span>
+<span class="o">.</span><span class="kt">False</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">require_request_uri_registration</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV13op_policy_uriSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/op_policy_uri" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV13op_policy_uriSSSgvp">op_policy_uri</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A  URL that the OpenID Provider provides to the person registering the Client to read about the OP&rsquo;s requirements on how the Relying Party can use the data provided by the OpenID Provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">op_policy_uri</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Authentication16OIDCMetadataInfoV10op_tos_uriSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/op_tos_uri" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Authentication16OIDCMetadataInfoV10op_tos_uriSSSgvp">op_tos_uri</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A URL that the OpenID Provider provides to the person registering the Client to read about OpenID Provider&rsquo;s terms of service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">op_tos_uri</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2022 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external noopener">IBM Secuity</a>. All rights reserved. (Last updated: 2022-03-11)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
