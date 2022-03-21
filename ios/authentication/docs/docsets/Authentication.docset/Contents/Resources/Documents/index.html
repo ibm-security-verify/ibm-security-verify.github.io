@@ -99,10 +99,10 @@
             
             <h1 id='ibm-security-verify-authentication-sdk-for-ios' class='heading'>IBM Security Verify Authentication SDK for iOS</h1>
 
-<p>The Authentication SDK enables applications to obtain limited access to an HTTP service by orchestrating an approval interaction between the resource owner and the HTTP service.</p>
+<p>The Authentication software development kit (SDK) enables applications to obtain limited access to an HTTP service by orchestrating an approval interaction between the resource owner and the HTTP service.</p>
 <h2 id='example' class='heading'>Example</h2>
 
-<p>An <a href="../../examples/authentication">example</a> application is available for the Verify Authentication SDK</p>
+<p>An <a href="../../examples/authentication">example</a> application is available for the Authentication SDK</p>
 <h2 id='getting-started' class='heading'>Getting started</h2>
 <h3 id='installation' class='heading'>Installation</h3>
 
@@ -133,9 +133,8 @@
 <p>The Authentication SDK API can be reviewed <a href="https://ibm-security-verify.github.io/ios/authentication/docs/">here</a>.</p>
 <h3 id='importing-the-sdk' class='heading'>Importing the SDK</h3>
 
-<p>Add the following import statement to the <code>.swift</code> files you want to reference the Core SDK.</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Core</span>
-<span class="kd">import</span> <span class="kt">Authentication</span>
+<p>Add the following import statement to the <code>.swift</code> files you want to reference the Authentication SDK.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Authentication</span>
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
 <h3 id='getting-openid-configuration-metadata' class='heading'>Getting OpenId Configuration Metadata</h3>
@@ -161,7 +160,7 @@
 <span class="c1">// The view controller to start user authentication.</span>
 <span class="kd">class</span> <span class="kt">SigninViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
     <span class="k">let</span> <span class="nv">issuerUrl</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/authorize"</span><span class="p">)</span><span class="o">!</span>
-    <span class="k">let</span> <span class="nv">tokenURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/token"</span><span class="p">)</span><span class="o">!</span>
+    <span class="k">let</span> <span class="nv">tokenURL</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/token"</span><span class="p">)</span><span class="o">!</span>
     <span class="k">let</span> <span class="nv">redirectUrl</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"verifysdk://auth/callback"</span><span class="p">)</span><span class="o">!</span>
 
     <span class="kd">func</span> <span class="nf">onSigninClick</span><span class="p">()</span> <span class="p">{</span>
@@ -212,7 +211,7 @@
 <span class="c1">// The view controller to start user authentication.</span>
 <span class="kd">class</span> <span class="kt">SigninViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
     <span class="k">let</span> <span class="nv">issuerUrl</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/authorize"</span><span class="p">)</span><span class="o">!</span>
-    <span class="k">let</span> <span class="nv">tokenURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/token"</span><span class="p">)</span><span class="o">!</span>
+    <span class="k">let</span> <span class="nv">tokenURL</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"https://www.example.com/token"</span><span class="p">)</span><span class="o">!</span>
     <span class="k">let</span> <span class="nv">redirectUrl</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"verifysdk://auth/callback"</span><span class="p">)</span><span class="o">!</span>
     <span class="k">var</span> <span class="nv">codeVerifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
     <span class="k">var</span> <span class="nv">codeChallenge</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
@@ -343,7 +342,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external noopener">IBM Secuity</a>. All rights reserved. (Last updated: 2022-03-11)</p>
+      <p>&copy; 2022 <a class="link" href="https://www.ibm.com/au-en/security/identity-access-management" target="_blank" rel="external noopener">IBM Secuity</a>. All rights reserved. (Last updated: 2022-03-21)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
