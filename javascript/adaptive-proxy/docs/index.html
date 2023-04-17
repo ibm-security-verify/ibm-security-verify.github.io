@@ -90,6 +90,35 @@ authentication, authorization, and risk assessment using IBM Security Verify.</p
 <p>Use <a href="https://github.com/npm/cli">npm</a> to install the Proxy SDK:</p>
 <pre class="prettyprint source lang-bash"><code>npm install @ibm-verify/adaptive-proxy
 </code></pre>
+<h2>HTTP Proxy Settings (optional)</h2>
+<p>To use a HTTP proxy, you will need to set environment variables in a <code>.env</code> file. The <code>.env</code> file should contian the following
+parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PROXY_HOST</code></td>
+<td><code>string</code></td>
+<td>The hostname or IP address of the proxy.</td>
+</tr>
+<tr>
+<td><code>PROXY_SECURE</code></td>
+<td><code>boolean</code></td>
+<td>A flag for using http or https proxy protocol.  Default is <code>false</code> (http).</td>
+</tr>
+<tr>
+<td><code>PROXY_PORT</code></td>
+<td><code>integer</code></td>
+<td>The port the proxy is listening on.</td>
+</tr>
+</tbody>
+</table>
 <h2>Configuration Settings</h2>
 <p>To use the Proxy SDK, you will need to initialise an <code>Adaptive</code> object with a
 configuration object. The configuration object should contian the following
