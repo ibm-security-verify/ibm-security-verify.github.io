@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Fido2Api</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            FIDO2 SDK for Android
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fido2:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="FIDO2 SDK for Android::com.ibm.security.verifysdk.fido2/Fido2Api///PointingToDeclaration//-440054524">
+  <div class="breadcrumbs"><a href="../../../index.html">FIDO2 SDK for Android</a><span class="delimiter">/</span><a href="../index.html">com.ibm.security.verifysdk.fido2</a><span class="delimiter">/</span><span class="current">Fido2Api</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Fido2Api</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Fido2Api</a></div><p class="paragraph">A class providing methods for FIDO2 operations. This class contains functionalities related to key pair generation, attestation, and assertion processes using biometric authentication.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-173388563%2FConstructors%2F-440054524" anchor-label="Fido2Api" id="-173388563%2FConstructors%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-fido2-api.html"><span><span>Fido2Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-173388563%2FConstructors%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1653493745%2FFunctions%2F-440054524" anchor-label="buildAuthenticatorAssertionResponse" id="-1653493745%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-authenticator-assertion-response.html"><span>build</span><wbr></wbr><span>Authenticator</span><wbr></wbr><span>Assertion</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1653493745%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="build-authenticator-assertion-response.html"><span class="token function">buildAuthenticatorAssertionResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">executor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html">Executor</a><span class="token punctuation">, </span></span><span class="parameter ">promptInfoBuilder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/biometric/BiometricPrompt.PromptInfo.Builder.html">BiometricPrompt.PromptInfo.Builder</a><span class="token punctuation">, </span></span><span class="parameter ">keyName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-public-key-credential-request-options/index.html">PublicKeyCredentialRequestOptions</a><span class="token punctuation">, </span></span><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-authenticator-assertion-response/index.html">AuthenticatorAssertionResponse</a></div><div class="brief "><p class="paragraph">Builds an AuthenticatorAssertionResponse for the given parameters.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="470355457%2FFunctions%2F-440054524" anchor-label="buildAuthenticatorAttestationResponse" id="470355457%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-authenticator-attestation-response.html"><span>build</span><wbr></wbr><span>Authenticator</span><wbr></wbr><span>Attestation</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="470355457%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="build-authenticator-attestation-response.html"><span class="token function">buildAuthenticatorAttestationResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">executor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html">Executor</a><span class="token punctuation">, </span></span><span class="parameter ">promptInfoBuilder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/biometric/BiometricPrompt.PromptInfo.Builder.html">BiometricPrompt.PromptInfo.Builder</a><span class="token punctuation">, </span></span><span class="parameter ">aaGuid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">keyName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-public-key-credential-creation-options/index.html">PublicKeyCredentialCreationOptions</a><span class="token punctuation">, </span></span><span class="parameter ">nickName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-authenticator-attestation-response/index.html">AuthenticatorAttestationResponse</a></div><div class="brief "><p class="paragraph">Builds an AuthenticatorAttestationResponse for the given parameters.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2008096522%2FFunctions%2F-440054524" anchor-label="createKeyPair" id="2008096522%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-key-pair.html"><span>create</span><wbr></wbr><span>Key</span><wbr></wbr><span><span>Pair</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2008096522%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-key-pair.html"><span class="token function">createKeyPair</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">keyName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authenticationRequired<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">invalidatedByBiometricEnrollment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/security/PublicKey.html">PublicKey</a></div><div class="brief "><p class="paragraph">Creates a new key pair in the Android KeyStore.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1832499553%2FFunctions%2F-440054524" anchor-label="initiateAssertion" id="-1832499553%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initiate-assertion.html"><span>initiate</span><wbr></wbr><span><span>Assertion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1832499553%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="initiate-assertion.html"><span class="token function">initiateAssertion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assertionOptionsUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">assertionOptions<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-assertion-options/index.html">AssertionOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.ibm.security.verifysdk.fido2.model/-public-key-credential-request-options/index.html">PublicKeyCredentialRequestOptions</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Initiates the assertion process with the specified options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-816560261%2FFunctions%2F-440054524" anchor-label="initiateAttestation" id="-816560261%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initiate-attestation.html"><span>initiate</span><wbr></wbr><span><span>Attestation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-816560261%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="initiate-attestation.html"><span class="token function">initiateAttestation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attestationOptionsUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">attestationOptions<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-attestation-options/index.html">AttestationOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.ibm.security.verifysdk.fido2.model/-public-key-credential-creation-options/index.html">PublicKeyCredentialCreationOptions</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Initiates the attestation process with the specified options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="111565660%2FFunctions%2F-440054524" anchor-label="sendAssertion" id="111565660%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-assertion.html"><span>send</span><wbr></wbr><span><span>Assertion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="111565660%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send-assertion.html"><span class="token function">sendAssertion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assertionResultUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authenticatorAssertionResponse<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-authenticator-assertion-response/index.html">AuthenticatorAssertionResponse</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.ibm.security.verifysdk.fido2.model/-assertion-result-response/index.html">AssertionResultResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends the assertion result to the server.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1816970652%2FFunctions%2F-440054524" anchor-label="sendAttestation" id="1816970652%2FFunctions%2F-440054524" data-filterable-set=":fido2:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-attestation.html"><span>send</span><wbr></wbr><span><span>Attestation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1816970652%2FFunctions%2F-440054524"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send-attestation.html"><span class="token function">sendAttestation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attestationResultUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authorization<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">authenticatorAttestationResponse<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-authenticator-attestation-response/index.html">AuthenticatorAttestationResponse</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.ibm.security.verifysdk.fido2.model/-attestation-result-response/index.html">AttestationResultResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends the attestation result to the server.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2024 IBM</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

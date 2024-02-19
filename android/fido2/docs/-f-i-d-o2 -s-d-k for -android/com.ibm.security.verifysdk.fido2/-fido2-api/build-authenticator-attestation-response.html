@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>buildAuthenticatorAttestationResponse</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            FIDO2 SDK for Android
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fido2:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="FIDO2 SDK for Android::com.ibm.security.verifysdk.fido2/Fido2Api/buildAuthenticatorAttestationResponse/#androidx.fragment.app.FragmentActivity#java.util.concurrent.Executor#androidx.biometric.BiometricPrompt.PromptInfo.Builder#kotlin.String#kotlin.String#kotlin.Byte#com.ibm.security.verifysdk.fido2.model.PublicKeyCredentialCreationOptions#kotlin.String/PointingToDeclaration//-440054524">
+  <div class="breadcrumbs"><a href="../../../index.html">FIDO2 SDK for Android</a><span class="delimiter">/</span><a href="../index.html">com.ibm.security.verifysdk.fido2</a><span class="delimiter">/</span><a href="index.html">Fido2Api</a><span class="delimiter">/</span><span class="current">buildAuthenticatorAttestationResponse</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>build</span><wbr></wbr><span>Authenticator</span><wbr></wbr><span>Attestation</span><wbr></wbr><span><span>Response</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fido2:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="build-authenticator-attestation-response.html"><span class="token function">buildAuthenticatorAttestationResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/FragmentActivity.html">FragmentActivity</a><span class="token punctuation">, </span></span><span class="parameter ">executor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html">Executor</a><span class="token punctuation">, </span></span><span class="parameter ">promptInfoBuilder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/biometric/BiometricPrompt.PromptInfo.Builder.html">BiometricPrompt.PromptInfo.Builder</a><span class="token punctuation">, </span></span><span class="parameter ">aaGuid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">keyName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-public-key-credential-creation-options/index.html">PublicKeyCredentialCreationOptions</a><span class="token punctuation">, </span></span><span class="parameter ">nickName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.ibm.security.verifysdk.fido2.model/-authenticator-attestation-response/index.html">AuthenticatorAttestationResponse</a></div><p class="paragraph">Builds an AuthenticatorAttestationResponse for the given parameters.</p><p class="paragraph">This function constructs an AuthenticatorAttestationResponse, which represents the response from the authenticator during the attestation process. It is used to attest to the creation of a new public key credential. The response includes various data such as client data, attestation statement, and authenticator data.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">The constructed AuthenticatorAttestationResponse.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>activity</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The FragmentActivity instance to display UI prompts.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>executor</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The Executor instance to run asynchronous tasks.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>prompt</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Builder</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The PromptInfo.Builder instance to build the biometric     authentication dialog.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>aa</span><wbr></wbr><span><span>Guid</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The AAGUID (Authenticator Attestation Globally Unique Identifier).</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>key</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The name of the key in the Android KeyStore.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>flags</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The flags indicating the capabilities and status of the authenticator.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>options</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The PublicKeyCredentialCreationOptions containing the parameters for     creating the public key credential.</p></div></div></div></div><div class="table-row" data-filterable-current=":fido2:dokkaHtml/release" data-filterable-set=":fido2:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>nick</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The nickname associated with the authenticator.</p></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2024 IBM</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
