@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.adaptive</a></div>
         <h2 title="Class FIDOGenerateResult" class="title">Class FIDOGenerateResult</h2>
     </div>
     <div class="contentContainer">
@@ -125,7 +125,20 @@ var pathtoroot = "../../../../../";
 public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>FIDOGenerateResult</a></span>
  implements <a href=GenerateResult.html>GenerateResult</a>
                     </pre>
-                    <div class="block"><p>Represents a FIDO generate result.</p><p>Useful for returning from the <a href=AdaptiveDelegate.html#generate(String,String,Factor,Function1)>AdaptiveDelegate.generate</a> methods when generating a FIDO verification.</p></div>
+                    <div class="block"><p>Represents a FIDO generate result.</p><p>Useful for returning from the <a href=AdaptiveDelegate.html#generate(java.lang.String,java.lang.String,com.ibm.security.verifysdk.adaptive.Factor,kotlin.jvm.functions.Function1)>AdaptiveDelegate.generate</a> methods when generating a FIDO verification.</p></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -228,7 +241,7 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#FIDOGenerateResult(String,String,String,Integer,JSONArray)">FIDOGenerateResult</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> rpId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> challenge, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> userVerification, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> timeout, <a href=https://developer.android.com/reference/kotlin/org/json/JSONArray.html>JSONArray</a> allowCredentials)</code></th>
+                                                        href="#FIDOGenerateResult(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.json.JSONArray)">FIDOGenerateResult</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> rpId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> challenge, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> userVerification, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> timeout, <a href=https://developer.android.com/reference/kotlin/org/json/JSONArray.html>JSONArray</a> allowCredentials)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -352,7 +365,7 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="FIDOGenerateResult(String,String,String,Integer,JSONArray)"></a>
+                                <a name="FIDOGenerateResult(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.json.JSONArray)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>FIDOGenerateResult</h4>
@@ -385,8 +398,16 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         <h4>getRpId</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOGenerateResult.html#getRpId()>getRpId</a>()</pre>
                                         <div class="block"><p>The relying party ID.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -400,8 +421,16 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         <h4>getChallenge</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOGenerateResult.html#getChallenge()>getChallenge</a>()</pre>
                                         <div class="block"><p>The unique challenge used as part of this authentication attempt.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -415,8 +444,16 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         <h4>getUserVerification</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOGenerateResult.html#getUserVerification()>getUserVerification</a>()</pre>
                                         <div class="block"><p>The extent to which the user must verify.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -430,8 +467,16 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         <h4>getTimeout</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=FIDOGenerateResult.html#getTimeout()>getTimeout</a>()</pre>
                                         <div class="block"><p>The time for the client to wait for user interaction.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -445,8 +490,16 @@ public final class <span class="typeNameLabel"><a href=FIDOGenerateResult.html>F
                                         <h4>getAllowCredentials</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/org/json/JSONArray.html>JSONArray</a> <a href=FIDOGenerateResult.html#getAllowCredentials()>getAllowCredentials</a>()</pre>
                                         <div class="block"><p>The credentials allowed to perform authentication. Can be empty when performing login without a username.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

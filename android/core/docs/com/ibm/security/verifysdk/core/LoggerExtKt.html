@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.core</a></div>
         <h2 title="Class LoggerExtKt" class="title">Class LoggerExtKt</h2>
     </div>
     <div class="contentContainer">
@@ -118,6 +118,14 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
 
                     </pre>
                     <div class="block"></div>
+
+                    <dl>
+
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -240,7 +248,7 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#entering(Logger,Integer)>entering</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level) </code>
+                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#entering(org.slf4j.Logger,org.slf4j.event.Level)>entering</a>(Logger $self, Level level) </code>
                                             </th>
                                             <td class="colLast">Creates a log message in the format<pre><code>Entry class={} method={}</code></pre></td>
                                         </tr>
@@ -248,7 +256,7 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#exiting(Logger,Integer)>exiting</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level) </code>
+                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#exiting(org.slf4j.Logger,org.slf4j.event.Level)>exiting</a>(Logger $self, Level level) </code>
                                             </th>
                                             <td class="colLast">Creates a log message in the format<pre><code>Exit class={} method={}</code></pre></td>
                                         </tr>
@@ -256,7 +264,7 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#threadInfo(Logger,Integer)>threadInfo</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level) </code>
+                                            <th class="colSecond" scope="row"><code><a href=LoggerExtKt.html#threadInfo(org.slf4j.Logger,org.slf4j.event.Level)>threadInfo</a>(Logger $self, Level level) </code>
                                             </th>
                                             <td class="colLast">Creates a log message with the name and ID of the current thread.</td>
                                         </tr>
@@ -305,7 +313,7 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="entering(Logger,Integer)">
+                                <a id="entering(org.slf4j.Logger,org.slf4j.event.Level)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -313,10 +321,12 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                           >
                                     <li class="blockList">
                                         <h4>entering</h4>
-                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#entering(Logger,Integer)>entering</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level)</pre>
+                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#entering(org.slf4j.Logger,org.slf4j.event.Level)>entering</a>(Logger $self, Level level)</pre>
                                         <div class="block"><p>Creates a log message in the format</p><pre><code>Entry class={} method={}</code></pre></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -325,13 +335,22 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                             <dd><code>level</code> - The log level for the message.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+                                            <dt><span class="sinceLabel">Since:</span></dt>
+                                            
+                                                <dd><p>3.0.0</p></dd>
+                                            
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="exiting(Logger,Integer)">
+                                <a id="exiting(org.slf4j.Logger,org.slf4j.event.Level)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -339,10 +358,12 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                           >
                                     <li class="blockList">
                                         <h4>exiting</h4>
-                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#exiting(Logger,Integer)>exiting</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level)</pre>
+                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#exiting(org.slf4j.Logger,org.slf4j.event.Level)>exiting</a>(Logger $self, Level level)</pre>
                                         <div class="block"><p>Creates a log message in the format</p><pre><code>Exit class={} method={}</code></pre></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -351,13 +372,22 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                             <dd><code>level</code> - The log level for the message.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+                                            <dt><span class="sinceLabel">Since:</span></dt>
+                                            
+                                                <dd><p>3.0.0</p></dd>
+                                            
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="threadInfo(Logger,Integer)">
+                                <a id="threadInfo(org.slf4j.Logger,org.slf4j.event.Level)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -365,10 +395,12 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                           >
                                     <li class="blockList">
                                         <h4>threadInfo</h4>
-                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#threadInfo(Logger,Integer)>threadInfo</a>(Logger $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> level)</pre>
-                                        <div class="block"><p>Creates a log message with the name and ID of the current thread.</p><p>See https://developer.android.com/reference/android/util/Log#summary for the supported range of the <code>level</code></p></div>
-                                        
+                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=LoggerExtKt.html#threadInfo(org.slf4j.Logger,org.slf4j.event.Level)>threadInfo</a>(Logger $self, Level level)</pre>
+                                        <div class="block"><p>Creates a log message with the name and ID of the current thread.</p></div>
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -377,9 +409,18 @@ public final class <span class="typeNameLabel"><a href=LoggerExtKt.html>LoggerEx
                                             <dd><code>level</code> - The log level for the message.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+                                            <dt><span class="sinceLabel">Since:</span></dt>
+                                            
+                                                <dd><p>3.0.0</p></dd>
+                                            
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

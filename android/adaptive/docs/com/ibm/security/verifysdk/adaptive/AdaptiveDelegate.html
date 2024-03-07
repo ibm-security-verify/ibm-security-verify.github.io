@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.adaptive</a></div>
         <h2 title="Interface AdaptiveDelegate" class="title">Interface AdaptiveDelegate</h2>
     </div>
     <div class="contentContainer">
@@ -118,6 +118,19 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
 
                     </pre>
                     <div class="block"><p>An interface to perform Adaptive authenticator operations.</p></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -240,7 +253,7 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#assessment(String,String,Function1)>assessment</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> sessionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
+                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#assessment(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1)>assessment</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> sessionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
                                             </th>
                                             <td class="colLast">Executes an assessment against a endpoint that integrates against Cloud Identity Policy Driven Authentication services.</td>
                                         </tr>
@@ -248,7 +261,7 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#generate(String,String,Factor,Function1)>generate</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> enrollmentId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=Factor.html>Factor</a> factor, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=GenerateResult.html>GenerateResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
+                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#generate(java.lang.String,java.lang.String,com.ibm.security.verifysdk.adaptive.Factor,kotlin.jvm.functions.Function1)>generate</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> enrollmentId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=Factor.html>Factor</a> factor, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=GenerateResult.html>GenerateResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
                                             </th>
                                             <td class="colLast">Generates a factor against an endpoint that integrates against Cloud Identity Policy Driven Authentication services.</td>
                                         </tr>
@@ -256,7 +269,7 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#evaluate(FactorEvaluation,String,Function1)>evaluate</a>(<a href=FactorEvaluation.html>FactorEvaluation</a> evaluation, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
+                                            <th class="colSecond" scope="row"><code><a href=AdaptiveDelegate.html#evaluate(com.ibm.security.verifysdk.adaptive.FactorEvaluation,java.lang.String,kotlin.jvm.functions.Function1)>evaluate</a>(<a href=FactorEvaluation.html>FactorEvaluation</a> evaluation, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion) </code>
                                             </th>
                                             <td class="colLast">Evaluates a factor against an endpoint that integrates against Cloud Identity Policy Driven Authentication services.</td>
                                         </tr>
@@ -305,7 +318,7 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="assessment(String,String,Function1)">
+                                <a id="assessment(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -313,10 +326,12 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                           >
                                     <li class="blockList">
                                         <h4>assessment</h4>
-                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#assessment(String,String,Function1)>assessment</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> sessionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
+                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#assessment(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1)>assessment</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> sessionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
                                         <div class="block"><p>Executes an assessment against a endpoint that integrates against Cloud Identity Policy Driven Authentication services.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -331,13 +346,17 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                             <dd><code>completion</code> - A <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt; callback variable.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="generate(String,String,Factor,Function1)">
+                                <a id="generate(java.lang.String,java.lang.String,com.ibm.security.verifysdk.adaptive.Factor,kotlin.jvm.functions.Function1)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -345,10 +364,12 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                           >
                                     <li class="blockList">
                                         <h4>generate</h4>
-                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#generate(String,String,Factor,Function1)>generate</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> enrollmentId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=Factor.html>Factor</a> factor, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=GenerateResult.html>GenerateResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
+                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#generate(java.lang.String,java.lang.String,com.ibm.security.verifysdk.adaptive.Factor,kotlin.jvm.functions.Function1)>generate</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> enrollmentId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=Factor.html>Factor</a> factor, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=GenerateResult.html>GenerateResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
                                         <div class="block"><p>Generates a factor against an endpoint that integrates against Cloud Identity Policy Driven Authentication services.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -356,7 +377,7 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                             
                                             
                                             
-                                            <dd><code>transactionId</code> - A transaction identifier received in a <a href=AssessmentStatusType.html#requires>AssessmentStatusType.requires</a> response from a <a href=AdaptiveDelegate.html#assessment(String,String,Function1)>AdaptiveDelegate.assessment</a> or <a href=AdaptiveDelegate.html#evaluate(FactorEvaluation,String,Function1)>AdaptiveDelegate.evaluate</a> request.</dd>
+                                            <dd><code>transactionId</code> - A transaction identifier received in a <a href=AssessmentStatusType.html#requires>AssessmentStatusType.requires</a> response from a <a href=AdaptiveDelegate.html#assessment(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1)>AdaptiveDelegate.assessment</a> or <a href=AdaptiveDelegate.html#evaluate(com.ibm.security.verifysdk.adaptive.FactorEvaluation,java.lang.String,kotlin.jvm.functions.Function1)>AdaptiveDelegate.evaluate</a> request.</dd>
                                             
                                             
                                             
@@ -367,13 +388,17 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                             <dd><code>completion</code> - A <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=GenerateResult.html>GenerateResult</a>?&gt; callback variable.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="evaluate(FactorEvaluation,String,Function1)">
+                                <a id="evaluate(com.ibm.security.verifysdk.adaptive.FactorEvaluation,java.lang.String,kotlin.jvm.functions.Function1)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -381,10 +406,12 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                           >
                                     <li class="blockList">
                                         <h4>evaluate</h4>
-                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#evaluate(FactorEvaluation,String,Function1)>evaluate</a>(<a href=FactorEvaluation.html>FactorEvaluation</a> evaluation, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
+                                        <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AdaptiveDelegate.html#evaluate(com.ibm.security.verifysdk.adaptive.FactorEvaluation,java.lang.String,kotlin.jvm.functions.Function1)>evaluate</a>(<a href=FactorEvaluation.html>FactorEvaluation</a> evaluation, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> evaluationContext, Function1&lt;<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt;, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a>&gt; completion)</pre>
                                         <div class="block"><p>Evaluates a factor against an endpoint that integrates against Cloud Identity Policy Driven Authentication services.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -399,9 +426,13 @@ public interface <span class="typeNameLabel"><a href=AdaptiveDelegate.html>Adapt
                                             <dd><code>completion</code> - A <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=AdaptiveResult.html>AdaptiveResult</a>&gt; callback variable.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
