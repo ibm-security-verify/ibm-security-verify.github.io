@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.authentication</a></div>
         <h2 title="Class PKCEHelper" class="title">Class PKCEHelper</h2>
     </div>
     <div class="contentContainer">
@@ -125,6 +125,19 @@ val codeChallenge = PKCE.generateCodeChallenge(codeVerifier)
 print(&quot;SHA256 hash of codeVerifier: $codeChallenge&quot;)
 }
 &lt;/pre&gt;</div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -146,13 +159,6 @@ print(&quot;SHA256 hash of codeVerifier: $codeChallenge&quot;)
                                             <th class="colFirst" scope="col">Modifier and Type</th>
                                             <th class="colSecond" scope="col">Class</th>
                                             <th class="colLast" scope="col">Description</th>
-                                        </tr>
-                                        
-                                        <tr class="altColor">
-                                            <td class="colFirst"><code>public class</code></td>
-                                            <th class="colSecond" scope="row"><code><a href="PKCEHelper.Companion.html">PKCEHelper.Companion</a></span></code>
-                                            </th>
-                                            <td class="colLast"></td>
                                         </tr>
                                         
                                     </table>
@@ -257,6 +263,22 @@ print(&quot;SHA256 hash of codeVerifier: $codeChallenge&quot;)
                                             <th class="colLast" scope="col">Description</th>
                                         </tr>
                                         
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PKCEHelper.html#generateCodeVerifier()>generateCodeVerifier</a>() </code>
+                                            </th>
+                                            <td class="colLast">Generates a cryptographically random string that is used to correlate the authorization request to the token request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=PKCEHelper.html#generateCodeChallenge(java.lang.String)>generateCodeChallenge</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier) </code>
+                                            </th>
+                                            <td class="colLast">A challenge derived from the code verifier that is sent in the authorization request, to be verified against later.</td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -310,6 +332,75 @@ print(&quot;SHA256 hash of codeVerifier: $codeChallenge&quot;)
                                 <!--   -->
                             </a>
                                 <h3>Method Detail</h3>
+                                
+                                <a id="generateCodeVerifier()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>generateCodeVerifier</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=PKCEHelper.html#generateCodeVerifier()>generateCodeVerifier</a>()</pre>
+                                        <div class="block"><p>Generates a cryptographically random string that is used to correlate the authorization request to the token request.</p></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Cryptographically random string</p></dd>
+                                        
+
+                                        
+                                            <dt><span class="sinceLabel">Since:</span></dt>
+                                            
+                                                <dd><p>3.0.0</p></dd>
+                                            
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="generateCodeChallenge(java.lang.String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>generateCodeChallenge</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=PKCEHelper.html#generateCodeChallenge(java.lang.String)>generateCodeChallenge</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier)</pre>
+                                        <div class="block"><p>A challenge derived from the code verifier that is sent in the authorization request, to be verified against later.</p></div>
+
+                                        <dl>
+
+                                        
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>codeVerifier</code> - : A cryptographically random string.</dd>
+                                            
+                                            
+                                        
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>Base-64 URL encoded string</p></dd>
+                                        
+
+                                        
+                                            <dt><span class="sinceLabel">Since:</span></dt>
+                                            
+                                                <dd><p>3.0.0</p></dd>
+                                            
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
                                 
                             </li>
                         </ul>

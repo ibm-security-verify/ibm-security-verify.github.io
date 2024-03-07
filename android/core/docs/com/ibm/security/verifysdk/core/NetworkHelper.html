@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.core</a></div>
         <h2 title="Object NetworkHelper" class="title">Object NetworkHelper</h2>
     </div>
     <div class="contentContainer">
@@ -118,6 +118,19 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
 
                     </pre>
                     <div class="block"><p>A singleton to configures the network object that handles the calls.</p></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -292,9 +305,9 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
-                                            <td class="colFirst"><code>final &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=NetworkHelper.html#handleApi(Response)>T</a>&gt;</code>
+                                            <td class="colFirst"><code>final &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=NetworkHelper.html#handleApi(retrofit2.Response)>T</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#handleApi(Response)>handleApi</a>(Response&lt;ResponseBody&gt; response) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#handleApi(retrofit2.Response)>handleApi</a>(Response&lt;ResponseBody&gt; response) </code>
                                             </th>
                                             <td class="colLast">Wrap the network response in a result object of a given type.</td>
                                         </tr>
@@ -310,7 +323,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setRetrofit(Retrofit)>setRetrofit</a>(Retrofit retrofit) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setRetrofit(retrofit2.Retrofit)>setRetrofit</a>(Retrofit retrofit) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -326,7 +339,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setFollowSslRedirects(Boolean)>setFollowSslRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followSslRedirects) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setFollowSslRedirects(java.lang.Boolean)>setFollowSslRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followSslRedirects) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -342,7 +355,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomLoggingInterceptor(HttpLoggingInterceptor)>setCustomLoggingInterceptor</a>(HttpLoggingInterceptor customLoggingInterceptor) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomLoggingInterceptor(okhttp3.logging.HttpLoggingInterceptor)>setCustomLoggingInterceptor</a>(HttpLoggingInterceptor customLoggingInterceptor) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -358,7 +371,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomInterceptor(Interceptor)>setCustomInterceptor</a>(Interceptor customInterceptor) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomInterceptor(okhttp3.Interceptor)>setCustomInterceptor</a>(Interceptor customInterceptor) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -374,7 +387,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCertificatePinner(CertificatePinner)>setCertificatePinner</a>(CertificatePinner certificatePinner) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCertificatePinner(okhttp3.CertificatePinner)>setCertificatePinner</a>(CertificatePinner certificatePinner) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -390,7 +403,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setReadTimeOut(Integer)>setReadTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> readTimeOut) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setReadTimeOut(java.lang.Integer)>setReadTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> readTimeOut) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -406,7 +419,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setConnectionTimeOut(Integer)>setConnectionTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> connectionTimeOut) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setConnectionTimeOut(java.lang.Integer)>setConnectionTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> connectionTimeOut) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -463,7 +476,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="handleApi(Response)">
+                                <a id="handleApi(retrofit2.Response)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -471,10 +484,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>handleApi</h4>
-                                        <pre class="methodSignature"> final &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=NetworkHelper.html#handleApi(Response)>T</a>&gt; <a href=NetworkHelper.html#handleApi(Response)>handleApi</a>(Response&lt;ResponseBody&gt; response)</pre>
+                                        <pre class="methodSignature"> final &lt;T extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=NetworkHelper.html#handleApi(retrofit2.Response)>T</a>&gt; <a href=NetworkHelper.html#handleApi(retrofit2.Response)>handleApi</a>(Response&lt;ResponseBody&gt; response)</pre>
                                         <div class="block"><p>Wrap the network response in a result object of a given type.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -488,12 +509,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getRetrofit</h4>
                                         <pre class="methodSignature"> final Retrofit <a href=NetworkHelper.html#getRetrofit()>getRetrofit</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setRetrofit(Retrofit)">
+                                <a id="setRetrofit(retrofit2.Retrofit)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -501,10 +530,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setRetrofit</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setRetrofit(Retrofit)>setRetrofit</a>(Retrofit retrofit)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setRetrofit(retrofit2.Retrofit)>setRetrofit</a>(Retrofit retrofit)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -518,12 +555,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getFollowSslRedirects</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=NetworkHelper.html#getFollowSslRedirects()>getFollowSslRedirects</a>()</pre>
                                         <div class="block"><p>Indicates whether redirects should be followed. Default is <code>true</code>.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setFollowSslRedirects(Boolean)">
+                                <a id="setFollowSslRedirects(java.lang.Boolean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -531,10 +576,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setFollowSslRedirects</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setFollowSslRedirects(Boolean)>setFollowSslRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followSslRedirects)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setFollowSslRedirects(java.lang.Boolean)>setFollowSslRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followSslRedirects)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -548,12 +601,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getCustomLoggingInterceptor</h4>
                                         <pre class="methodSignature"> final HttpLoggingInterceptor <a href=NetworkHelper.html#getCustomLoggingInterceptor()>getCustomLoggingInterceptor</a>()</pre>
                                         <div class="block"><p>Defines a customized interceptor for logging. Added as an <a href=https://square.github.io/okhttp/features/interceptors/.html>Application Interceptor</a></p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setCustomLoggingInterceptor(HttpLoggingInterceptor)">
+                                <a id="setCustomLoggingInterceptor(okhttp3.logging.HttpLoggingInterceptor)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -561,10 +622,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setCustomLoggingInterceptor</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCustomLoggingInterceptor(HttpLoggingInterceptor)>setCustomLoggingInterceptor</a>(HttpLoggingInterceptor customLoggingInterceptor)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCustomLoggingInterceptor(okhttp3.logging.HttpLoggingInterceptor)>setCustomLoggingInterceptor</a>(HttpLoggingInterceptor customLoggingInterceptor)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -578,12 +647,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getCustomInterceptor</h4>
                                         <pre class="methodSignature"> final Interceptor <a href=NetworkHelper.html#getCustomInterceptor()>getCustomInterceptor</a>()</pre>
                                         <div class="block"><p>Defines a customized interceptor. Added as an <a href=https://square.github.io/okhttp/features/interceptors/.html>Application Interceptor</a></p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setCustomInterceptor(Interceptor)">
+                                <a id="setCustomInterceptor(okhttp3.Interceptor)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -591,10 +668,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setCustomInterceptor</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCustomInterceptor(Interceptor)>setCustomInterceptor</a>(Interceptor customInterceptor)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCustomInterceptor(okhttp3.Interceptor)>setCustomInterceptor</a>(Interceptor customInterceptor)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -608,12 +693,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getCertificatePinner</h4>
                                         <pre class="methodSignature"> final CertificatePinner <a href=NetworkHelper.html#getCertificatePinner()>getCertificatePinner</a>()</pre>
                                         <div class="block"><p>Constrains which certificates are trusted.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setCertificatePinner(CertificatePinner)">
+                                <a id="setCertificatePinner(okhttp3.CertificatePinner)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -621,10 +714,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setCertificatePinner</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCertificatePinner(CertificatePinner)>setCertificatePinner</a>(CertificatePinner certificatePinner)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setCertificatePinner(okhttp3.CertificatePinner)>setCertificatePinner</a>(CertificatePinner certificatePinner)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -638,12 +739,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getReadTimeOut</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=NetworkHelper.html#getReadTimeOut()>getReadTimeOut</a>()</pre>
                                         <div class="block"><p>Defines the timeout in seconds to receive a response. Default is 30 seconds.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setReadTimeOut(Integer)">
+                                <a id="setReadTimeOut(java.lang.Integer)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -651,10 +760,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setReadTimeOut</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setReadTimeOut(Integer)>setReadTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> readTimeOut)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setReadTimeOut(java.lang.Integer)>setReadTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> readTimeOut)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -668,12 +785,20 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getConnectionTimeOut</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=NetworkHelper.html#getConnectionTimeOut()>getConnectionTimeOut</a>()</pre>
                                         <div class="block"><p>Defines the timeout in seconds to establish a connection. Default is 30 seconds.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setConnectionTimeOut(Integer)">
+                                <a id="setConnectionTimeOut(java.lang.Integer)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -681,10 +806,18 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>setConnectionTimeOut</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setConnectionTimeOut(Integer)>setConnectionTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> connectionTimeOut)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#setConnectionTimeOut(java.lang.Integer)>setConnectionTimeOut</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> connectionTimeOut)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -698,8 +831,16 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <h4>getNetworkApi</h4>
                                         <pre class="methodSignature"> final <a href=NetworkApi.html>NetworkApi</a> <a href=NetworkHelper.html#getNetworkApi()>getNetworkApi</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

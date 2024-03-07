@@ -1,0 +1,6 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+
+com.ibm.security.verifysdk.fido2
+com.ibm.security.verifysdk.fido2.model
+

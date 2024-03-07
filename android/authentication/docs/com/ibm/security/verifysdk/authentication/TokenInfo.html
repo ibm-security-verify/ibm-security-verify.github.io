@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.authentication</a></div>
         <h2 title="Class TokenInfo" class="title">Class TokenInfo</h2>
     </div>
     <div class="contentContainer">
@@ -116,11 +116,24 @@ var pathtoroot = "../../../../../";
                     
                     <hr>
                     <pre class="wrap-overflow">
-
+@Serializable(with = TokenInfoSerializer.class) 
 public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo</a></span>
  implements <a href=https://developer.android.com/reference/kotlin/android/os/Parcelable.html>Parcelable</a>
                     </pre>
                     <div class="block"><p>The authorization server issues an access token and optional refresh token.  In addition, it provides the token type and other properties supporting the access token.</p></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -241,7 +254,7 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#TokenInfo(String,String,Instant,Integer,Instant,String,String,Map)">TokenInfo</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, Instant createdOn, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> expiresIn, Instant expiresOn, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> tokenType, <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; additionalData)</code></th>
+                                                        href="#TokenInfo(java.lang.String,java.lang.String,kotlinx.datetime.Instant,java.lang.Integer,kotlinx.datetime.Instant,java.lang.String,java.lang.String,java.util.Map)">TokenInfo</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, Instant createdOn, <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> expiresIn, Instant expiresOn, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> tokenType, <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; additionalData)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -361,7 +374,7 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=TokenInfo.html#toJson(Boolean)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> withReadableTimestamps) </code>
+                                            <th class="colSecond" scope="row"><code><a href=TokenInfo.html#toJson(java.lang.Boolean)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> withReadableTimestamps) </code>
                                             </th>
                                             <td class="colLast">Returns a <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> representation of the token.</td>
                                         </tr>
@@ -403,7 +416,7 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="TokenInfo(String,String,Instant,Integer,Instant,String,String,Map)"></a>
+                                <a name="TokenInfo(java.lang.String,java.lang.String,kotlinx.datetime.Instant,java.lang.Integer,kotlinx.datetime.Instant,java.lang.String,java.lang.String,java.util.Map)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>TokenInfo</h4>
@@ -436,8 +449,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getAccessToken</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=TokenInfo.html#getAccessToken()>getAccessToken</a>()</pre>
                                         <div class="block"><p>The access token generated by the authorization server.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -451,8 +472,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getRefreshToken</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=TokenInfo.html#getRefreshToken()>getRefreshToken</a>()</pre>
                                         <div class="block"><p>The refresh token, which can be used to obtain new access tokens using the same authorization grant.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -466,8 +495,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getCreatedOn</h4>
                                         <pre class="methodSignature"> final Instant <a href=TokenInfo.html#getCreatedOn()>getCreatedOn</a>()</pre>
                                         <div class="block"><p>The date and time when the access token was created.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -481,8 +518,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getExpiresIn</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Integer.html>Integer</a> <a href=TokenInfo.html#getExpiresIn()>getExpiresIn</a>()</pre>
                                         <div class="block"><p>The lifetime in seconds of the access token.</p><p>For example, the value &quot;3600&quot; denotes that the access token will expire in one hour from the time the response was generated.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -496,8 +541,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getExpiresOn</h4>
                                         <pre class="methodSignature"> final Instant <a href=TokenInfo.html#getExpiresOn()>getExpiresOn</a>()</pre>
                                         <div class="block"><p>The date and time when the access token expires.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -511,8 +564,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getScope</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=TokenInfo.html#getScope()>getScope</a>()</pre>
                                         <div class="block"><p>The scope of the access token.</p><p>If the scope the user granted is identical to the scope the app requested, this parameter is optional. If the granted scope is different from the requested scope, such as if the user modified the scope, then this parameter is required.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -526,8 +587,16 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getTokenType</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=TokenInfo.html#getTokenType()>getTokenType</a>()</pre>
                                         <div class="block"><p>Typically &quot;Bearer&quot; when present. Otherwise, another <code>tokenType</code> value that the client has negotiated with the authorization server.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -541,12 +610,20 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                         <h4>getAdditionalData</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt; <a href=TokenInfo.html#getAdditionalData()>getAdditionalData</a>()</pre>
                                         <div class="block"><p>Additional data parameters returned from the token server.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="toJson(Boolean)">
+                                <a id="toJson(java.lang.Boolean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -554,19 +631,25 @@ public final class <span class="typeNameLabel"><a href=TokenInfo.html>TokenInfo<
                                           >
                                     <li class="blockList">
                                         <h4>toJson</h4>
-                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> <a href=TokenInfo.html#toJson(Boolean)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> withReadableTimestamps)</pre>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> <a href=TokenInfo.html#toJson(java.lang.Boolean)>toJson</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> withReadableTimestamps)</pre>
                                         <div class="block"><p>Returns a <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> representation of the token.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>withReadableTimestamps</code> - flag to indicate whether the timestamp should be     should be in a human readable format.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.adaptive</a></div>
         <h2 title="Class FIDOEvaluation" class="title">Class FIDOEvaluation</h2>
     </div>
     <div class="contentContainer">
@@ -131,6 +131,19 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
         // Handle `adaptiveResult` of type `AdaptiveResult`.
     }
 }</code></pre></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -233,7 +246,7 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#FIDOEvaluation(String,String,String,String,String)">FIDOEvaluation</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authenticatorData, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> userHandle, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> signature, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientDataJSON)</code></th>
+                                                        href="#FIDOEvaluation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">FIDOEvaluation</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> transactionId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authenticatorData, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> userHandle, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> signature, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientDataJSON)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -357,7 +370,7 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="FIDOEvaluation(String,String,String,String,String)"></a>
+                                <a name="FIDOEvaluation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>FIDOEvaluation</h4>
@@ -390,8 +403,16 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         <h4>getTransactionId</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOEvaluation.html#getTransactionId()>getTransactionId</a>()</pre>
                                         <div class="block"><p>Transaction identifier used to associate an evaluation. Received in a <a href=RequiresAssessmentResult.html>RequiresAssessmentResult</a>.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -405,8 +426,16 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         <h4>getAuthenticatorData</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOEvaluation.html#getAuthenticatorData()>getAuthenticatorData</a>()</pre>
                                         <div class="block"><p>The information about the authentication produced by the authenticator.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -420,8 +449,16 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         <h4>getUserHandle</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOEvaluation.html#getUserHandle()>getUserHandle</a>()</pre>
                                         <div class="block"><p>The identifier for the user who owns this authenticator.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -435,8 +472,16 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         <h4>getSignature</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOEvaluation.html#getSignature()>getSignature</a>()</pre>
                                         <div class="block"><p>The received and signed FIDO challenge from <a href=FIDOGenerateResult.html>FIDOGenerateResult</a>.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -450,8 +495,16 @@ adaptive.evaluate(evaluation = fidoEvaluation) { result -&gt;
                                         <h4>getClientDataJSON</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=FIDOEvaluation.html#getClientDataJSON()>getClientDataJSON</a>()</pre>
                                         <div class="block"><p>The base64Url-encoded clientDataJson that was received from the WebAuthn client.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.authentication</a></div>
         <h2 title="Class OAuthProvider" class="title">Class OAuthProvider</h2>
     </div>
     <div class="contentContainer">
@@ -118,6 +118,19 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
 
                     </pre>
                     <div class="block"><p>The OAuthProvider enables third-party applications to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf.</p><p>To use this library, the following attributes must be overridden in the <code>build.gradle</code> file to specify the custom scheme that will be used for the OAuth2 redirect {@see https://developer.android.com/guide/topics/manifest/data-element}:</p><ul><li><p>auth_redirect_scheme</p></li><li><p>auth_redirect_host</p></li><li><p>auth_redirect_path</p></li></ul></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -214,13 +227,13 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#OAuthProvider(String,String,TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), extra=PropertyContainer(map={})),TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), extra=PropertyContainer(map={})))">OAuthProvider</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret, <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders, <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters)</code></th>
+                                                        href="#OAuthProvider(java.lang.String,java.lang.String,kotlin.collections.HashMap,kotlin.collections.HashMap)">OAuthProvider</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret, <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders, <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
                                             <tr class="rowColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#OAuthProvider(String,String)">OAuthProvider</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret)</code></th>
+                                                        href="#OAuthProvider(java.lang.String,java.lang.String)">OAuthProvider</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientId, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> clientSecret)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -284,7 +297,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i1" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#setAdditionalHeaders(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#setAdditionalHeaders(kotlin.collections.HashMap)>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -300,7 +313,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#setAdditionalParameters(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))>setAdditionalParameters</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#setAdditionalParameters(kotlin.collections.HashMap)>setAdditionalParameters</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -324,7 +337,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=OIDCMetadataInfo.html>OIDCMetadataInfo</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#discover(URL)>discover</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#discover(java.net.URL)>discover</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url) </code>
                                             </th>
                                             <td class="colLast">Discover the authorization service configuration from a compliant OpenID Connect endpoint.</td>
                                         </tr>
@@ -332,7 +345,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorizeWithBrowser(URL,String,String,CodeChallengeMethod,Array,String,AppCompatActivity)>authorizeWithBrowser</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeChallenge, <a href=CodeChallengeMethod.html>CodeChallengeMethod</a> method, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> state, <a href=https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html>AppCompatActivity</a> activity) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorizeWithBrowser(java.net.URL,java.lang.String,java.lang.String,com.ibm.security.verifysdk.authentication.CodeChallengeMethod,kotlin.Array,java.lang.String,androidx.activity.ComponentActivity)>authorizeWithBrowser</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeChallenge, <a href=CodeChallengeMethod.html>CodeChallengeMethod</a> method, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> state, <a href=https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html>ComponentActivity</a> activity) </code>
                                             </th>
                                             <td class="colLast">Launches Chrome Custom Tabs to initiate the authorization code (AZN) flow using optional Proof Key for Code Exchange (PKCE).</td>
                                         </tr>
@@ -340,7 +353,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorize(URL,URL,String,String,Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authorizationCode, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorize(java.net.URL,java.net.URL,java.lang.String,java.lang.String,kotlin.Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authorizationCode, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
                                             </th>
                                             <td class="colLast">The authorization code is obtained by using an authorization server as an intermediary between the client and resource owner.</td>
                                         </tr>
@@ -348,7 +361,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorize(URL,String,String,Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> username, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> password, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#authorize(java.net.URL,java.lang.String,java.lang.String,kotlin.Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> username, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> password, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
                                             </th>
                                             <td class="colLast">The resource owner password credentials (i.e., username and password) can be used directly as an authorization grant to obtain an access token.</td>
                                         </tr>
@@ -356,7 +369,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt;</code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#refresh(URL,String,Array)>refresh</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
+                                            <th class="colSecond" scope="row"><code><a href=OAuthProvider.html#refresh(java.net.URL,java.lang.String,kotlin.Array)>refresh</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope) </code>
                                             </th>
                                             <td class="colLast">Refresh tokens are issued to the client by the authorization server and are used to obtain a new access token when the current access token becomes invalid or expires, or to obtain additional access tokens with identical or narrower scope.</td>
                                         </tr>
@@ -392,7 +405,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="OAuthProvider(String,String,TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), extra=PropertyContainer(map={})),TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={}))), extra=PropertyContainer(map={})))"></a>
+                                <a name="OAuthProvider(java.lang.String,java.lang.String,kotlin.collections.HashMap,kotlin.collections.HashMap)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>OAuthProvider</h4>
@@ -402,7 +415,7 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                     </li>
                                 </ul>
                                 
-                                <a name="OAuthProvider(String,String)"></a>
+                                <a name="OAuthProvider(java.lang.String,java.lang.String)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>OAuthProvider</h4>
@@ -435,12 +448,20 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <h4>getAdditionalHeaders</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=OAuthProvider.html#getAdditionalHeaders()>getAdditionalHeaders</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setAdditionalHeaders(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))">
+                                <a id="setAdditionalHeaders(kotlin.collections.HashMap)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -448,10 +469,18 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>setAdditionalHeaders</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=OAuthProvider.html#setAdditionalHeaders(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=OAuthProvider.html#setAdditionalHeaders(kotlin.collections.HashMap)>setAdditionalHeaders</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalHeaders)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -465,12 +494,20 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <h4>getAdditionalParameters</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=OAuthProvider.html#getAdditionalParameters()>getAdditionalParameters</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setAdditionalParameters(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))">
+                                <a id="setAdditionalParameters(kotlin.collections.HashMap)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -478,10 +515,18 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>setAdditionalParameters</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=OAuthProvider.html#setAdditionalParameters(TypeAliased(typeAlias=GenericTypeConstructor(dri=kotlin.collections/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), inner=GenericTypeConstructor(dri=java.util/HashMap///PointingToDeclaration/, projections=[, ], presentableName=null, extra=PropertyContainer(map={})), extra=PropertyContainer(map={})))>setAdditionalParameters</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=OAuthProvider.html#setAdditionalParameters(kotlin.collections.HashMap)>setAdditionalParameters</a>(<a href=https://developer.android.com/reference/kotlin/java/util/HashMap.html>HashMap</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; additionalParameters)</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -495,8 +540,16 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <h4>getClientId</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=OAuthProvider.html#getClientId()>getClientId</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -510,12 +563,20 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                         <h4>getClientSecret</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=OAuthProvider.html#getClientSecret()>getClientSecret</a>()</pre>
                                         <div class="block"></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="discover(URL)">
+                                <a id="discover(java.net.URL)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -523,23 +584,29 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>discover</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=OIDCMetadataInfo.html>OIDCMetadataInfo</a>&gt; <a href=OAuthProvider.html#discover(URL)>discover</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=OIDCMetadataInfo.html>OIDCMetadataInfo</a>&gt; <a href=OAuthProvider.html#discover(java.net.URL)>discover</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url)</pre>
                                         <div class="block"><p>Discover the authorization service configuration from a compliant OpenID Connect endpoint.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
                                             <dd><code>url</code> - The <code>URL</code> for the OpenID Connect service provider issuer.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="authorizeWithBrowser(URL,String,String,CodeChallengeMethod,Array,String,AppCompatActivity)">
+                                <a id="authorizeWithBrowser(java.net.URL,java.lang.String,java.lang.String,com.ibm.security.verifysdk.authentication.CodeChallengeMethod,kotlin.Array,java.lang.String,androidx.activity.ComponentActivity)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -547,10 +614,12 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>authorizeWithBrowser</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=OAuthProvider.html#authorizeWithBrowser(URL,String,String,CodeChallengeMethod,Array,String,AppCompatActivity)>authorizeWithBrowser</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeChallenge, <a href=CodeChallengeMethod.html>CodeChallengeMethod</a> method, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> state, <a href=https://developer.android.com/reference/kotlin/androidx/appcompat/app/AppCompatActivity.html>AppCompatActivity</a> activity)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=OAuthProvider.html#authorizeWithBrowser(java.net.URL,java.lang.String,java.lang.String,com.ibm.security.verifysdk.authentication.CodeChallengeMethod,kotlin.Array,java.lang.String,androidx.activity.ComponentActivity)>authorizeWithBrowser</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeChallenge, <a href=CodeChallengeMethod.html>CodeChallengeMethod</a> method, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> state, <a href=https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html>ComponentActivity</a> activity)</pre>
                                         <div class="block"><p>Launches Chrome Custom Tabs to initiate the authorization code (AZN) flow using optional Proof Key for Code Exchange (PKCE).</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -579,13 +648,20 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                             
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a> with the <code>code</code> to be used in the subsequent authorization request or     with <code>Throwable</code> in case of an error.</p></dd>
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="authorize(URL,URL,String,String,Array)">
+                                <a id="authorize(java.net.URL,java.net.URL,java.lang.String,java.lang.String,kotlin.Array)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -593,10 +669,12 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>authorize</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#authorize(URL,URL,String,String,Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authorizationCode, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#authorize(java.net.URL,java.net.URL,java.lang.String,java.lang.String,kotlin.Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> redirectUrl, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authorizationCode, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> codeVerifier, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
                                         <div class="block"><p>The authorization code is obtained by using an authorization server as an intermediary between the client and resource owner.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -619,13 +697,17 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                             <dd><code>scope</code> - The scope of the access request.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="authorize(URL,String,String,Array)">
+                                <a id="authorize(java.net.URL,java.lang.String,java.lang.String,kotlin.Array)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -633,10 +715,12 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>authorize</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#authorize(URL,String,String,Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> username, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> password, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#authorize(java.net.URL,java.lang.String,java.lang.String,kotlin.Array)>authorize</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> username, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> password, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
                                         <div class="block"><p>The resource owner password credentials (i.e., username and password) can be used directly as an authorization grant to obtain an access token.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -655,13 +739,17 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                             <dd><code>scope</code> - The scope of the access request.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="refresh(URL,String,Array)">
+                                <a id="refresh(java.net.URL,java.lang.String,kotlin.Array)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -669,10 +757,12 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                           >
                                     <li class="blockList">
                                         <h4>refresh</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#refresh(URL,String,Array)>refresh</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/index.html>Result</a>&lt;<a href=TokenInfo.html>TokenInfo</a>&gt; <a href=OAuthProvider.html#refresh(java.net.URL,java.lang.String,kotlin.Array)>refresh</a>(<a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> url, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> refreshToken, <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html>Array</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; scope)</pre>
                                         <div class="block"><p>Refresh tokens are issued to the client by the authorization server and are used to obtain a new access token when the current access token becomes invalid or expires, or to obtain additional access tokens with identical or narrower scope.</p><p>Because refresh tokens are typically long-lasting credentials used to request additional access tokens, the refresh token is bound to the client to which it was issued.</p></div>
-                                        
+
                                         <dl>
+
+                                        
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
@@ -687,9 +777,13 @@ public final class <span class="typeNameLabel"><a href=OAuthProvider.html>OAuthP
                                             <dd><code>scope</code> - The scope of the access request.</dd>
                                             
                                             
-                                        </dl>
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
