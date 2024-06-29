@@ -172,6 +172,18 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                             <th class="colLast" scope="col">Description</th>
                                         </tr>
                                         
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#camelRegex>camelRegex</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#snakeRegex>snakeRegex</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
                                     </table>
                                 </div>
                             </li>
@@ -246,6 +258,22 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                         </tr>
                                         
                                         <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#getCamelRegex()>getCamelRegex</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#getSnakeRegex()>getSnakeRegex</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
                                             <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Number.html>Number</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=StringExtKt.html#toNumberOrNull(java.lang.String)>toNumberOrNull</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self) </code>
@@ -253,7 +281,7 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i1" class="rowColor">
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/Number.html>Number</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=StringExtKt.html#toNumberOrDefault(java.lang.String,java.lang.Number)>toNumberOrDefault</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self, <a href=https://developer.android.com/reference/kotlin/java/lang/Number.html>Number</a> default) </code>
@@ -261,10 +289,34 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i2" class="altColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=StringExtKt.html#sha256(java.lang.String)>sha256</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#camelToSnakeCase(java.lang.String)>camelToSnakeCase</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#snakeToCamelCase(java.lang.String)>snakeToCamelCase</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html>ByteArray</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=StringExtKt.html#decodeBase32(java.lang.String)>decodeBase32</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -312,6 +364,52 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                 <!--   -->
                             </a>
                                 <h3>Method Detail</h3>
+                                
+                                <a id="getCamelRegex()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getCamelRegex</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a> <a href=StringExtKt.html#getCamelRegex()>getCamelRegex</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="getSnakeRegex()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getSnakeRegex</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html>Regex</a> <a href=StringExtKt.html#getSnakeRegex()>getSnakeRegex</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
                                 
                                 <a id="toNumberOrNull(java.lang.String)">
                                     <!--   -->
@@ -363,11 +461,80 @@ public final class <span class="typeNameLabel"><a href=StringExtKt.html>StringEx
                                     <!--   -->
                                 </a>
                                 <ul class=
-                                              "blockListLast"
+                                              "blockList"
                                           >
                                     <li class="blockList">
                                         <h4>sha256</h4>
                                         <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=StringExtKt.html#sha256(java.lang.String)>sha256</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self)</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="camelToSnakeCase(java.lang.String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>camelToSnakeCase</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=StringExtKt.html#camelToSnakeCase(java.lang.String)>camelToSnakeCase</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self)</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="snakeToCamelCase(java.lang.String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>snakeToCamelCase</h4>
+                                        <pre class="methodSignature"> final static <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=StringExtKt.html#snakeToCamelCase(java.lang.String)>snakeToCamelCase</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self)</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="decodeBase32(java.lang.String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>decodeBase32</h4>
+                                        <pre class="methodSignature"> final static <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html>ByteArray</a> <a href=StringExtKt.html#decodeBase32(java.lang.String)>decodeBase32</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> $self)</pre>
                                         <div class="block"></div>
 
                                         <dl>

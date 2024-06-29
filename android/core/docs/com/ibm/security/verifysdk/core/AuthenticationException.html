@@ -181,20 +181,20 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                                         </tr>
                                         
                                         <tr class="altColor">
-                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#error>error</a></code></th>
+                                            <td class="colFirst"><code>private final HttpStatusCode</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=AuthenticationException.html#code>code</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="rowColor">
                                             <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#errorDescription>errorDescription</a></code></th>
+                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#error>error</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
                                         <tr class="altColor">
                                             <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
-                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#errorMessage>errorMessage</a></code></th>
+                                            <th class="colSecond" scope="row"><code><a href=VerifySdkException.html#errorDescription>errorDescription</a></code></th>
                                             <td class="colLast"></td>
                                         </tr>
                                         
@@ -236,7 +236,7 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#AuthenticationException(java.lang.String,java.lang.String)">AuthenticationException</a></span>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> code, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description)</code></th>
+                                                        href="#AuthenticationException(io.ktor.http.HttpStatusCode,java.lang.String,java.lang.String)">AuthenticationException</a></span>(HttpStatusCode code, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -289,6 +289,14 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                                             <th class="colLast" scope="col">Description</th>
                                         </tr>
                                         
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final HttpStatusCode</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AuthenticationException.html#getCode()>getCode</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -298,7 +306,7 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                                             <!--   -->
                                         </a>
                                             <h3>Methods inherited from class&nbsp;com.ibm.security.verifysdk.core.VerifySdkException</h3>
-                                            <code>getError, getErrorDescription, getErrorMessage, toString, toString</code></li>
+                                            <code>getError, getErrorDescription, toString, toString</code></li>
                                  
                                     <li class="blockList"><a id="methods.inherited.from.class.kotlin.Throwable">
                                             <!--   -->
@@ -332,11 +340,11 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="AuthenticationException(java.lang.String,java.lang.String)"></a>
+                                <a name="AuthenticationException(io.ktor.http.HttpStatusCode,java.lang.String,java.lang.String)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>AuthenticationException</h4>
-                                        <pre>AuthenticationException(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> code, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description)</pre>
+                                        <pre>AuthenticationException(HttpStatusCode code, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description)</pre>
                                         <div class="block"></div>
                                         
                                     </li>
@@ -354,6 +362,29 @@ extends <a href=VerifySdkException.html>VerifySdkException</a>
                                 <!--   -->
                             </a>
                                 <h3>Method Detail</h3>
+                                
+                                <a id="getCode()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getCode</h4>
+                                        <pre class="methodSignature"> final HttpStatusCode <a href=AuthenticationException.html#getCode()>getCode</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
                                 
                             </li>
                         </ul>
