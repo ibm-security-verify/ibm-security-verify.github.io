@@ -117,10 +117,15 @@ var pathtoroot = "../../../../../";
 public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.html>AuthenticatorDescriptor</a></span>
 
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p>An interface that defines the authenticator identifier and it's metadata.</p></div>
 
                     <dl>
 
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.2</p></dd>
+                        
                     
 
                     
@@ -250,7 +255,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=AuthenticatorDescriptor.html#getId()>getId</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The unique identifier of the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -258,7 +263,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=AuthenticatorDescriptor.html#getServiceName()>getServiceName</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the service providing the authenicator.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -266,7 +271,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=AuthenticatorDescriptor.html#getAccountName()>getAccountName</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the account associated with the service.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -274,7 +279,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=AuthenticatorDescriptor.html#setAccountName(java.lang.String)>setAccountName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the account associated with the service.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -282,7 +287,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=AuthenticatorDescriptor.html#getAllowedFactors()>getAllowedFactors</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">A list of allowed factors the user can attempt to perform 2nd factor (2FA) and multi-factor authentication (MFA).</td>
                                         </tr>
                                         
                                         </tbody>
@@ -338,7 +343,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                     <li class="blockList">
                                         <h4>getId</h4>
                                         <pre class="methodSignature"> abstract <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=AuthenticatorDescriptor.html#getId()>getId</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The unique identifier of the authenticator.  Typically represented as a <code>UUID</code>.</p></div>
 
                                         <dl>
 
@@ -361,7 +366,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                     <li class="blockList">
                                         <h4>getServiceName</h4>
                                         <pre class="methodSignature"> abstract <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=AuthenticatorDescriptor.html#getServiceName()>getServiceName</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the service providing the authenicator.</p></div>
 
                                         <dl>
 
@@ -384,7 +389,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                     <li class="blockList">
                                         <h4>getAccountName</h4>
                                         <pre class="methodSignature"> abstract <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=AuthenticatorDescriptor.html#getAccountName()>getAccountName</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the account associated with the service.</p></div>
 
                                         <dl>
 
@@ -407,7 +412,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                     <li class="blockList">
                                         <h4>setAccountName</h4>
                                         <pre class="methodSignature"> abstract <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AuthenticatorDescriptor.html#setAccountName(java.lang.String)>setAccountName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the account associated with the service.</p></div>
 
                                         <dl>
 
@@ -430,7 +435,7 @@ public interface <span class="typeNameLabel"><a href=AuthenticatorDescriptor.htm
                                     <li class="blockList">
                                         <h4>getAllowedFactors</h4>
                                         <pre class="methodSignature"> abstract <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=FactorType.html>FactorType</a>&gt; <a href=AuthenticatorDescriptor.html#getAllowedFactors()>getAllowedFactors</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>A list of allowed factors the user can attempt to perform 2nd factor (2FA) and multi-factor authentication (MFA).</p></div>
 
                                         <dl>
 

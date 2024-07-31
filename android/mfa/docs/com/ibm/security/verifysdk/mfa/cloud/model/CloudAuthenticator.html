@@ -125,10 +125,15 @@ var pathtoroot = "../../../../../../../";
 public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>CloudAuthenticator</a></span>
  implements <a href=../../MFAAuthenticatorDescriptor.html>MFAAuthenticatorDescriptor</a>
                     </pre>
-                    <div class="block"></div>
+                    <div class="block"><p><code>CloudAuthenticator</code> enables authenticators to be able to perform transaction and token refresh operations.</p></div>
 
                     <dl>
 
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.2</p></dd>
+                        
                     
 
                     
@@ -318,7 +323,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getRefreshUri()>getRefreshUri</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The URI used to refresh the authenticator, serialized with <a href=../../URLSerializer.html>URLSerializer</a>.</td>
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
@@ -326,7 +331,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getTransactionUri()>getTransactionUri</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The URI used for transaction operations, serialized with <a href=../../URLSerializer.html>URLSerializer</a>.</td>
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
@@ -334,7 +339,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getTheme()>getTheme</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">A map representing the theme settings for the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
@@ -342,7 +347,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#setTheme(java.util.Map)>setTheme</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; theme) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">A map representing the theme settings for the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i4" class="altColor">
@@ -350,7 +355,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getToken()>getToken</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Information about the token associated with the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
@@ -358,7 +363,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#setToken(com.ibm.security.verifysdk.authentication.TokenInfo)>setToken</a>(TokenInfo token) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">Information about the token associated with the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i6" class="altColor">
@@ -366,7 +371,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getId()>getId</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The unique identifier of the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
@@ -374,7 +379,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getServiceName()>getServiceName</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the service using the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i8" class="altColor">
@@ -382,7 +387,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getAccountName()>getAccountName</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the account associated with the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
@@ -390,7 +395,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#setAccountName(java.lang.String)>setAccountName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName) </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">The name of the account associated with the authenticator.</td>
                                         </tr>
                                         
                                         <tr id="i10" class="altColor">
@@ -398,7 +403,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getAllowedFactors()>getAllowedFactors</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">A list of allowed factor types for multi-factor authentication.</td>
                                         </tr>
                                         
                                         <tr id="i11" class="rowColor">
@@ -406,7 +411,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=CloudAuthenticator.html#getCustomAttributes()>getCustomAttributes</a>() </code>
                                             </th>
-                                            <td class="colLast"></td>
+                                            <td class="colLast">A key value pair for configuring custom attributes of the authenticator.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -472,7 +477,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getRefreshUri</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> <a href=CloudAuthenticator.html#getRefreshUri()>getRefreshUri</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The URI used to refresh the authenticator, serialized with <a href=../../URLSerializer.html>URLSerializer</a>.</p></div>
 
                                         <dl>
 
@@ -495,7 +500,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getTransactionUri</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/net/URL.html>URL</a> <a href=CloudAuthenticator.html#getTransactionUri()>getTransactionUri</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The URI used for transaction operations, serialized with <a href=../../URLSerializer.html>URLSerializer</a>.</p></div>
 
                                         <dl>
 
@@ -518,7 +523,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getTheme</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=CloudAuthenticator.html#getTheme()>getTheme</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>A map representing the theme settings for the authenticator.</p></div>
 
                                         <dl>
 
@@ -541,7 +546,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>setTheme</h4>
                                         <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=CloudAuthenticator.html#setTheme(java.util.Map)>setTheme</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; theme)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>A map representing the theme settings for the authenticator.</p></div>
 
                                         <dl>
 
@@ -564,7 +569,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getToken</h4>
                                         <pre class="methodSignature"> TokenInfo <a href=CloudAuthenticator.html#getToken()>getToken</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Information about the token associated with the authenticator.</p></div>
 
                                         <dl>
 
@@ -587,7 +592,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>setToken</h4>
                                         <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=CloudAuthenticator.html#setToken(com.ibm.security.verifysdk.authentication.TokenInfo)>setToken</a>(TokenInfo token)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>Information about the token associated with the authenticator.</p></div>
 
                                         <dl>
 
@@ -610,7 +615,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getId</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=CloudAuthenticator.html#getId()>getId</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The unique identifier of the authenticator.</p></div>
 
                                         <dl>
 
@@ -633,7 +638,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getServiceName</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=CloudAuthenticator.html#getServiceName()>getServiceName</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the service using the authenticator.</p></div>
 
                                         <dl>
 
@@ -656,7 +661,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getAccountName</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=CloudAuthenticator.html#getAccountName()>getAccountName</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the account associated with the authenticator.</p></div>
 
                                         <dl>
 
@@ -679,7 +684,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>setAccountName</h4>
                                         <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=CloudAuthenticator.html#setAccountName(java.lang.String)>setAccountName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> accountName)</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>The name of the account associated with the authenticator.</p></div>
 
                                         <dl>
 
@@ -702,7 +707,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getAllowedFactors</h4>
                                         <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/util/List.html>List</a>&lt;<a href=../../FactorType.html>FactorType</a>&gt; <a href=CloudAuthenticator.html#getAllowedFactors()>getAllowedFactors</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>A list of allowed factor types for multi-factor authentication.</p></div>
 
                                         <dl>
 
@@ -725,7 +730,7 @@ public final class <span class="typeNameLabel"><a href=CloudAuthenticator.html>C
                                     <li class="blockList">
                                         <h4>getCustomAttributes</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; <a href=CloudAuthenticator.html#getCustomAttributes()>getCustomAttributes</a>()</pre>
-                                        <div class="block"></div>
+                                        <div class="block"><p>A key value pair for configuring custom attributes of the authenticator.</p></div>
 
                                         <dl>
 

@@ -264,7 +264,7 @@ public class <span class="typeNameLabel"><a href=HashAlgorithmType.Companion.htm
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=HashAlgorithmType.Companion.html#forSigning(java.lang.String)>forSigning</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> rawValue) </code>
                                             </th>
-                                            <td class="colLast">Normalize algorithm to value defined in https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.</td>
+                                            <td class="colLast">Converts a given raw hash algorithm name to its corresponding signing algorithm format.</td>
                                         </tr>
                                         
                                         </tbody>
@@ -343,12 +343,22 @@ public class <span class="typeNameLabel"><a href=HashAlgorithmType.Companion.htm
                                     <li class="blockList">
                                         <h4>forSigning</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=HashAlgorithmType.Companion.html#forSigning(java.lang.String)>forSigning</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> rawValue)</pre>
-                                        <div class="block"><p>Normalize algorithm to value defined in https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#Signature</p></div>
+                                        <div class="block"><p>Converts a given raw hash algorithm name to its corresponding signing algorithm format.</p></div>
 
                                         <dl>
 
                                         
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>rawValue</code> - The raw hash algorithm name as a string.</dd>
+                                            
+                                            
+                                        
 
+                                        
+                                            <dt><span class="returnLabel">Returns:</span></dt>
+                                            <dd><p>The signing algorithm format corresponding to the provided raw hash algorithm name.</p></dd>
                                         
 
                                         
