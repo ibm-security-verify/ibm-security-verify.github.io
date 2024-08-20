@@ -2,4 +2,6 @@ $dokka.format:javadoc-v1
 $dokka.linkExtension:html
 
 com.ibm.security.verifysdk.authentication
+com.ibm.security.verifysdk.authentication.api
+com.ibm.security.verifysdk.authentication.model
 

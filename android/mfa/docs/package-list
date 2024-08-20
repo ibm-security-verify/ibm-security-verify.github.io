@@ -26,8 +26,7 @@ $dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.UnableToCreateTra
 $dokka.location:com.ibm.security.verifysdk.mfa/OTPAuthenticator.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/OTPAuthenticator.Companion.html
 $dokka.location:com.ibm.security.verifysdk.mfa/OTPDescriptor.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/OTPDescriptor.Companion.html
 com.ibm.security.verifysdk.mfa
-com.ibm.security.verifysdk.mfa.cloud
-com.ibm.security.verifysdk.mfa.cloud.model
-com.ibm.security.verifysdk.mfa.onprem
-com.ibm.security.verifysdk.mfa.onprem.model
+com.ibm.security.verifysdk.mfa.api
+com.ibm.security.verifysdk.mfa.model.cloud
+com.ibm.security.verifysdk.mfa.model.onprem
 
