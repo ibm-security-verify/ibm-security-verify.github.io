@@ -338,7 +338,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         <tr id="i0" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#initialize(io.ktor.client.engine.HttpClientEngine)>initialize</a>(HttpClientEngine httpClientEngine) </code>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#initialize(io.ktor.client.HttpClient,io.ktor.client.engine.HttpClientEngine)>initialize</a>(HttpClient customClient, HttpClientEngine httpClientEngine) </code>
                                             </th>
                                             <td class="colLast"></td>
                                         </tr>
@@ -352,6 +352,14 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                         </tr>
                                         
                                         <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#closeClient()>closeClient</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getConnectTimeoutMillis()>getConnectTimeoutMillis</a>() </code>
@@ -359,7 +367,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i3" class="rowColor">
+                                        <tr id="i4" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setConnectTimeoutMillis(java.lang.Long)>setConnectTimeoutMillis</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> connectTimeoutMillis) </code>
@@ -367,7 +375,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i4" class="altColor">
+                                        <tr id="i5" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getRequestTimeoutMillis()>getRequestTimeoutMillis</a>() </code>
@@ -375,7 +383,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i5" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setRequestTimeoutMillis(java.lang.Long)>setRequestTimeoutMillis</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> requestTimeoutMillis) </code>
@@ -383,7 +391,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i6" class="altColor">
+                                        <tr id="i7" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getReadTimeOutMillis()>getReadTimeOutMillis</a>() </code>
@@ -391,7 +399,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i8" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setReadTimeOutMillis(java.lang.Long)>setReadTimeOutMillis</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> readTimeOutMillis) </code>
@@ -399,7 +407,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i8" class="altColor">
+                                        <tr id="i9" class="rowColor">
                                             <td class="colFirst"><code>final LogLevel</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getLogLevel()>getLogLevel</a>() </code>
@@ -407,7 +415,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i9" class="rowColor">
+                                        <tr id="i10" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setLogLevel(io.ktor.client.plugins.logging.LogLevel)>setLogLevel</a>(LogLevel logLevel) </code>
@@ -415,7 +423,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i10" class="altColor">
+                                        <tr id="i11" class="rowColor">
                                             <td class="colFirst"><code>final Logger</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getLogger()>getLogger</a>() </code>
@@ -423,7 +431,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i11" class="rowColor">
+                                        <tr id="i12" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setLogger(io.ktor.client.plugins.logging.Logger)>setLogger</a>(Logger logger) </code>
@@ -431,7 +439,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i12" class="altColor">
+                                        <tr id="i13" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getFollowRedirects()>getFollowRedirects</a>() </code>
@@ -439,7 +447,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i13" class="rowColor">
+                                        <tr id="i14" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setFollowRedirects(java.lang.Boolean)>setFollowRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followRedirects) </code>
@@ -447,7 +455,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i14" class="altColor">
+                                        <tr id="i15" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getFollowSslRedirects()>getFollowSslRedirects</a>() </code>
@@ -455,7 +463,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i15" class="rowColor">
+                                        <tr id="i16" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setFollowSslRedirects(java.lang.Boolean)>setFollowSslRedirects</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> followSslRedirects) </code>
@@ -463,7 +471,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i16" class="altColor">
+                                        <tr id="i17" class="rowColor">
                                             <td class="colFirst"><code>final Interceptor</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getCustomInterceptor()>getCustomInterceptor</a>() </code>
@@ -471,7 +479,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i17" class="rowColor">
+                                        <tr id="i18" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomInterceptor(okhttp3.Interceptor)>setCustomInterceptor</a>(Interceptor customInterceptor) </code>
@@ -479,7 +487,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i18" class="altColor">
+                                        <tr id="i19" class="rowColor">
                                             <td class="colFirst"><code>final HttpLoggingInterceptor</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getCustomLoggingInterceptor()>getCustomLoggingInterceptor</a>() </code>
@@ -487,7 +495,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i19" class="rowColor">
+                                        <tr id="i20" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCustomLoggingInterceptor(okhttp3.logging.HttpLoggingInterceptor)>setCustomLoggingInterceptor</a>(HttpLoggingInterceptor customLoggingInterceptor) </code>
@@ -495,7 +503,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i20" class="altColor">
+                                        <tr id="i21" class="rowColor">
                                             <td class="colFirst"><code>final CertificatePinner</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getCertificatePinner()>getCertificatePinner</a>() </code>
@@ -503,7 +511,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i21" class="rowColor">
+                                        <tr id="i22" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setCertificatePinner(okhttp3.CertificatePinner)>setCertificatePinner</a>(CertificatePinner certificatePinner) </code>
@@ -511,7 +519,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i22" class="altColor">
+                                        <tr id="i23" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext.html>SSLContext</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getSslContext()>getSslContext</a>() </code>
@@ -519,7 +527,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i23" class="rowColor">
+                                        <tr id="i24" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setSslContext(javax.net.ssl.SSLContext)>setSslContext</a>(<a href=https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext.html>SSLContext</a> sslContext) </code>
@@ -527,7 +535,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i24" class="altColor">
+                                        <tr id="i25" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html>HostnameVerifier</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getHostnameVerifier()>getHostnameVerifier</a>() </code>
@@ -535,7 +543,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i25" class="rowColor">
+                                        <tr id="i26" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)>setHostnameVerifier</a>(<a href=https://developer.android.com/reference/kotlin/javax/net/ssl/HostnameVerifier.html>HostnameVerifier</a> hostnameVerifier) </code>
@@ -543,7 +551,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i26" class="altColor">
+                                        <tr id="i27" class="rowColor">
                                             <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html>X509TrustManager</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getTrustManager()>getTrustManager</a>() </code>
@@ -551,7 +559,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i27" class="rowColor">
+                                        <tr id="i28" class="altColor">
                                             <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#setTrustManager(javax.net.ssl.X509TrustManager)>setTrustManager</a>(<a href=https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html>X509TrustManager</a> trustManager) </code>
@@ -559,7 +567,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                             <td class="colLast"></td>
                                         </tr>
                                         
-                                        <tr id="i28" class="altColor">
+                                        <tr id="i29" class="rowColor">
                                             <td class="colFirst"><code>final HttpClient</code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=NetworkHelper.html#getGetInstance()>getGetInstance</a>() </code>
@@ -611,7 +619,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                             </a>
                                 <h3>Method Detail</h3>
                                 
-                                <a id="initialize(io.ktor.client.engine.HttpClientEngine)">
+                                <a id="initialize(io.ktor.client.HttpClient,io.ktor.client.engine.HttpClientEngine)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -619,7 +627,7 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                           >
                                     <li class="blockList">
                                         <h4>initialize</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#initialize(io.ktor.client.engine.HttpClientEngine)>initialize</a>(HttpClientEngine httpClientEngine)</pre>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html>Synchronized</a>() final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#initialize(io.ktor.client.HttpClient,io.ktor.client.engine.HttpClientEngine)>initialize</a>(HttpClient customClient, HttpClientEngine httpClientEngine)</pre>
                                         <div class="block"></div>
 
                                         <dl>
@@ -643,6 +651,29 @@ public class <span class="typeNameLabel"><a href=NetworkHelper.html>NetworkHelpe
                                     <li class="blockList">
                                         <h4>insecureTrustManager</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html>X509TrustManager</a> <a href=NetworkHelper.html#insecureTrustManager()>insecureTrustManager</a>()</pre>
+                                        <div class="block"></div>
+
+                                        <dl>
+
+                                        
+
+                                        
+
+                                        
+
+                                        </dl>
+                                    </li>
+                                </ul>
+                                
+                                <a id="closeClient()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>closeClient</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=NetworkHelper.html#closeClient()>closeClient</a>()</pre>
                                         <div class="block"></div>
 
                                         <dl>
