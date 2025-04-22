@@ -88,7 +88,7 @@ var pathtoroot = "../../../../../";
 
 <main role="main">
     <div class="header">
-        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.ibm.security.verifysdk.adaptive</a></div>
         <h2 title="Class EnrolledFactor" class="title">Class EnrolledFactor</h2>
     </div>
     <div class="contentContainer">
@@ -125,7 +125,20 @@ var pathtoroot = "../../../../../";
 public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>EnrolledFactor</a></span>
  implements <a href=AssessmentFactor.html>AssessmentFactor</a>
                     </pre>
-                    <div class="block"><p>The <a href=EnrolledFactor.html>EnrolledFactor</a> data class represents first-factors in a <a href=RequiresAssessmentResult.html#factors>RequiresAssessmentResult.factors</a> returned from the <a href=AdaptiveDelegate.html#evaluate(FactorEvaluation,String,Function1)>AdaptiveDelegate.evaluate</a> method.</p><p>These returned factors are JSON objects, containing the properties <code>type</code>, <code>id</code>, <code>enabled</code>, <code>validated</code>, and <code>attributes</code>.</p></div>
+                    <div class="block"><p>The <a href=EnrolledFactor.html>EnrolledFactor</a> data class represents first-factors in a <a href=RequiresAssessmentResult.html#factors>RequiresAssessmentResult.factors</a> returned from the <a href=AdaptiveDelegate.html#evaluate(com.ibm.security.verifysdk.adaptive.FactorEvaluation,java.lang.String,kotlin.jvm.functions.Function1)>AdaptiveDelegate.evaluate</a> method.</p><p>These returned factors are JSON objects, containing the properties <code>type</code>, <code>id</code>, <code>enabled</code>, <code>validated</code>, and <code>attributes</code>.</p></div>
+
+                    <dl>
+
+                    
+                        <dt><span class="sinceLabel">Since:</span></dt>
+                        
+                            <dd><p>3.0.0</p></dd>
+                        
+                    
+
+                    
+
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -228,7 +241,7 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         
                                             <tr class="altColor">
                                                 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
-                                                        href="#EnrolledFactor(Factor,String,Boolean,Boolean,Map)">EnrolledFactor</a></span>(<a href=Factor.html>Factor</a> type, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated, <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes)</code></th>
+                                                        href="#EnrolledFactor(com.ibm.security.verifysdk.adaptive.Factor,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.util.Map)">EnrolledFactor</a></span>(<a href=Factor.html>Factor</a> type, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled, <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated, <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes)</code></th>
                                                 <td class="colLast"></td>
                                             </tr>
                                         
@@ -290,9 +303,9 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         </tr>
                                         
                                         <tr id="i1" class="rowColor">
-                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setType(Factor)>setType</a>(<a href=Factor.html>Factor</a> type) </code>
+                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setType(com.ibm.security.verifysdk.adaptive.Factor)>setType</a>(<a href=Factor.html>Factor</a> type) </code>
                                             </th>
                                             <td class="colLast">The type of second-factor.</td>
                                         </tr>
@@ -306,9 +319,9 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         </tr>
                                         
                                         <tr id="i3" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setId(String)>setId</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id) </code>
+                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setId(java.lang.String)>setId</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id) </code>
                                             </th>
                                             <td class="colLast">The unique identifier of the factor enrollment.</td>
                                         </tr>
@@ -322,9 +335,9 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setEnabled(Boolean)>setEnabled</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled) </code>
+                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setEnabled(java.lang.Boolean)>setEnabled</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled) </code>
                                             </th>
                                             <td class="colLast">A flag to indicate the enrollment is enabled.</td>
                                         </tr>
@@ -338,9 +351,9 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         </tr>
                                         
                                         <tr id="i7" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setValidated(Boolean)>setValidated</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated) </code>
+                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setValidated(java.lang.Boolean)>setValidated</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated) </code>
                                             </th>
                                             <td class="colLast">A flag to indicate the enrollment is validated.</td>
                                         </tr>
@@ -354,9 +367,9 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         </tr>
                                         
                                         <tr id="i9" class="rowColor">
-                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
-                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setAttributes(Map)>setAttributes</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes) </code>
+                                            <th class="colSecond" scope="row"><code><a href=EnrolledFactor.html#setAttributes(java.util.Map)>setAttributes</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes) </code>
                                             </th>
                                             <td class="colLast">Any additional attributes which may be present in the enrolled factor.</td>
                                         </tr>
@@ -392,7 +405,7 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                             </a>
                                 <h3>Constructor Detail</h3>
                                 
-                                <a name="EnrolledFactor(Factor,String,Boolean,Boolean,Map)"></a>
+                                <a name="EnrolledFactor(com.ibm.security.verifysdk.adaptive.Factor,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.util.Map)"></a>
                                 <ul class="blockList">
                                     <li class="blockList">
                                         <h4>EnrolledFactor</h4>
@@ -425,12 +438,20 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         <h4>getType</h4>
                                         <pre class="methodSignature"> <a href=Factor.html>Factor</a> <a href=EnrolledFactor.html#getType()>getType</a>()</pre>
                                         <div class="block"><p>The type of second-factor.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setType(Factor)">
+                                <a id="setType(com.ibm.security.verifysdk.adaptive.Factor)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -438,10 +459,18 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                           >
                                     <li class="blockList">
                                         <h4>setType</h4>
-                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setType(Factor)>setType</a>(<a href=Factor.html>Factor</a> type)</pre>
+                                        <pre class="methodSignature"> <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setType(com.ibm.security.verifysdk.adaptive.Factor)>setType</a>(<a href=Factor.html>Factor</a> type)</pre>
                                         <div class="block"><p>The type of second-factor.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -455,12 +484,20 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         <h4>getId</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=EnrolledFactor.html#getId()>getId</a>()</pre>
                                         <div class="block"><p>The unique identifier of the factor enrollment.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setId(String)">
+                                <a id="setId(java.lang.String)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -468,10 +505,18 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                           >
                                     <li class="blockList">
                                         <h4>setId</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setId(String)>setId</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setId(java.lang.String)>setId</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> id)</pre>
                                         <div class="block"><p>The unique identifier of the factor enrollment.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -485,12 +530,20 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         <h4>getEnabled</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=EnrolledFactor.html#getEnabled()>getEnabled</a>()</pre>
                                         <div class="block"><p>A flag to indicate the enrollment is enabled.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setEnabled(Boolean)">
+                                <a id="setEnabled(java.lang.Boolean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -498,10 +551,18 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                           >
                                     <li class="blockList">
                                         <h4>setEnabled</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setEnabled(Boolean)>setEnabled</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setEnabled(java.lang.Boolean)>setEnabled</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> enabled)</pre>
                                         <div class="block"><p>A flag to indicate the enrollment is enabled.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -515,12 +576,20 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         <h4>getValidated</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=EnrolledFactor.html#getValidated()>getValidated</a>()</pre>
                                         <div class="block"><p>A flag to indicate the enrollment is validated.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setValidated(Boolean)">
+                                <a id="setValidated(java.lang.Boolean)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -528,10 +597,18 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                           >
                                     <li class="blockList">
                                         <h4>setValidated</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setValidated(Boolean)>setValidated</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setValidated(java.lang.Boolean)>setValidated</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> validated)</pre>
                                         <div class="block"><p>A flag to indicate the enrollment is validated.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
@@ -545,12 +622,20 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                         <h4>getAttributes</h4>
                                         <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; <a href=EnrolledFactor.html#getAttributes()>getAttributes</a>()</pre>
                                         <div class="block"><p>Any additional attributes which may be present in the enrolled factor.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 
-                                <a id="setAttributes(Map)">
+                                <a id="setAttributes(java.util.Map)">
                                     <!--   -->
                                 </a>
                                 <ul class=
@@ -558,10 +643,18 @@ public final class <span class="typeNameLabel"><a href=EnrolledFactor.html>Enrol
                                           >
                                     <li class="blockList">
                                         <h4>setAttributes</h4>
-                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setAttributes(Map)>setAttributes</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes)</pre>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a> <a href=EnrolledFactor.html#setAttributes(java.util.Map)>setAttributes</a>(<a href=https://developer.android.com/reference/kotlin/java/util/Map.html>Map</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>, <a href=https://developer.android.com/reference/kotlin/java/io/Serializable.html>Serializable</a>&gt; attributes)</pre>
                                         <div class="block"><p>Any additional attributes which may be present in the enrolled factor.</p></div>
+
+                                        <dl>
+
                                         
-                                        <!-- TODO missing return annotation -->
+
+                                        
+
+                                        
+
+                                        </dl>
                                     </li>
                                 </ul>
                                 

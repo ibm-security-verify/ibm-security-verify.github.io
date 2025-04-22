@@ -1,0 +1,32 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.ibm.security.verifysdk.mfa/EnrollableType.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/EnrollableType.Companion.html
+$dokka.location:com.ibm.security.verifysdk.mfa/FactorType.Face///PointingToDeclaration/com/ibm/security/verifysdk/mfa/FactorType.Face.html
+$dokka.location:com.ibm.security.verifysdk.mfa/FactorType.Fingerprint///PointingToDeclaration/com/ibm/security/verifysdk/mfa/FactorType.Fingerprint.html
+$dokka.location:com.ibm.security.verifysdk.mfa/FactorType.Hotp///PointingToDeclaration/com/ibm/security/verifysdk/mfa/FactorType.Hotp.html
+$dokka.location:com.ibm.security.verifysdk.mfa/FactorType.Totp///PointingToDeclaration/com/ibm/security/verifysdk/mfa/FactorType.Totp.html
+$dokka.location:com.ibm.security.verifysdk.mfa/FactorType.UserPresence///PointingToDeclaration/com/ibm/security/verifysdk/mfa/FactorType.UserPresence.html
+$dokka.location:com.ibm.security.verifysdk.mfa/HashAlgorithmError.InvalidHash///PointingToDeclaration/com/ibm/security/verifysdk/mfa/HashAlgorithmError.InvalidHash.html
+$dokka.location:com.ibm.security.verifysdk.mfa/HashAlgorithmType.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/HashAlgorithmType.Companion.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.DataInitializationFailed///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.DataInitializationFailed.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.EnrollmentFailed///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.EnrollmentFailed.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.FailedToParse///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.FailedToParse.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.InvalidFormat///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.InvalidFormat.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.InvalidRegistrationData///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.InvalidRegistrationData.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.MissingAuthenticatorIdentifier///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.MissingAuthenticatorIdentifier.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.NoEnrollableFactors///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.NoEnrollableFactors.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFARegistrationError.UnderlyingError///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFARegistrationError.UnderlyingError.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.DecodingFailed///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.DecodingFailed.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.General///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.General.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.InvalidDataResponse///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.InvalidDataResponse.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.InvalidPendingTransaction///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.InvalidPendingTransaction.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.InvalidSigningHash///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.InvalidSigningHash.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.SerializationFailed///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.SerializationFailed.html
+$dokka.location:com.ibm.security.verifysdk.mfa/MFAServiceError.UnableToCreateTransaction///PointingToDeclaration/com/ibm/security/verifysdk/mfa/MFAServiceError.UnableToCreateTransaction.html
+$dokka.location:com.ibm.security.verifysdk.mfa/OTPAuthenticator.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/OTPAuthenticator.Companion.html
+$dokka.location:com.ibm.security.verifysdk.mfa/OTPDescriptor.Companion///PointingToDeclaration/com/ibm/security/verifysdk/mfa/OTPDescriptor.Companion.html
+com.ibm.security.verifysdk.mfa
+com.ibm.security.verifysdk.mfa.api
+com.ibm.security.verifysdk.mfa.model.cloud
+com.ibm.security.verifysdk.mfa.model.onprem
+

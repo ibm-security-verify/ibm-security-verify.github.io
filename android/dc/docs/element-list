@@ -1,0 +1,25 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.ibm.security.verifysdk.dc.model/ConnectionRole.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/ConnectionRole.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/ConnectionState.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/ConnectionState.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/CredentialFormat.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/CredentialFormat.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/CredentialPreviewInfo.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/CredentialPreviewInfo.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/CredentialRole.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/CredentialRole.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/CredentialState.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/CredentialState.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/Directives.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/Directives.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/InvitationRole.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/InvitationRole.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/Optionality.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/Optionality.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/Rules.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/Rules.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/VerificationPreviewInfo.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/VerificationPreviewInfo.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/VerificationRole.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/VerificationRole.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc.model/VerificationState.Companion///PointingToDeclaration/com/ibm/security/verifysdk/dc/model/VerificationState.Companion.html
+$dokka.location:com.ibm.security.verifysdk.dc/WalletError.DataInitializationFailed///PointingToDeclaration/com/ibm/security/verifysdk/dc/WalletError.DataInitializationFailed.html
+$dokka.location:com.ibm.security.verifysdk.dc/WalletError.FailedToParse///PointingToDeclaration/com/ibm/security/verifysdk/dc/WalletError.FailedToParse.html
+$dokka.location:com.ibm.security.verifysdk.dc/WalletError.General///PointingToDeclaration/com/ibm/security/verifysdk/dc/WalletError.General.html
+$dokka.location:com.ibm.security.verifysdk.dc/WalletError.InvalidFormat///PointingToDeclaration/com/ibm/security/verifysdk/dc/WalletError.InvalidFormat.html
+$dokka.location:com.ibm.security.verifysdk.dc/WalletError.MissingField///PointingToDeclaration/com/ibm/security/verifysdk/dc/WalletError.MissingField.html
+com.ibm.security.verifysdk.dc
+com.ibm.security.verifysdk.dc.api
+com.ibm.security.verifysdk.dc.model
+com.ibm.security.verifysdk.dc.serializer
+

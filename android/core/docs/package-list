@@ -1,5 +1,8 @@
 $dokka.format:javadoc-v1
 $dokka.linkExtension:html
-
+$dokka.location:com.ibm.security.verifysdk.core.helper/BaseApi.ErrorResponse///PointingToDeclaration/com/ibm/security/verifysdk/core/helper/BaseApi.ErrorResponse.html
 com.ibm.security.verifysdk.core
+com.ibm.security.verifysdk.core.extension
+com.ibm.security.verifysdk.core.helper
+com.ibm.security.verifysdk.core.serializer
 
